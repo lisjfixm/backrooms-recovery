@@ -44,6 +44,7 @@ backrooms-recovery/
 ├── Build/                        # Game.data / framework.js / loader.js / wasm（.unityweb）
 ├── fonts/                        # Torus 字體
 ├── screenshots/                  # 載入輪播截圖
+├── re/                           # 離線成品靜態逆向產出（類別 schema、世界模型、方法位址）
 └── README.md
 ```
 
@@ -57,6 +58,10 @@ backrooms-recovery/
 ## 二進位檔策略
 
 `Build/Game.wasm.unityweb`（約 25 MB）與 `Build/Game.data.unityweb`（約 13.6 MB）直接提交進 git，**未使用 Git LFS**：本專案為單機靜態離線成品，版本數有限，直接提交的成本可接受；若日後改版頻繁、倉庫體積明顯膨脹，再評估改用 LFS。
+
+## 逆向產出（re/）
+
+`re/` 收錄對 IL2CPP 成品的靜態逆向結果：自有類別欄位型別與偏移、方法→wasm 函式索引、靜態世界模型（怪物／記憶體／電池／門座標與 NavMeshAgent 參數）、dummy DLL 與完整傾印。索引與限制見 `re/README.md`。方法本體未還原，執行期活物件指標尚未定位。
 
 ## 版本記錄
 

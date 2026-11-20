@@ -1,0 +1,2718 @@
+{
+ "note": "IL2CPP 32-bit: object header klass@0x0, monitor@0x8; instance fields start 0x10. Offsets are static-recovered from MetadataRegistration fieldOffsets. Live instance pointer still must be located at runtime.",
+ "targets": {
+  "FreeFPSControllerStable": {
+   "role": "player controller",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "menuManager",
+     "type": "MainMenuManager",
+     "offset": "0x10",
+     "kind": "ref"
+    },
+    {
+     "name": "clueManager",
+     "type": "ClueManager",
+     "offset": "0x14",
+     "kind": "ref"
+    },
+    {
+     "name": "filesPanel",
+     "type": "FilesPanelController",
+     "offset": "0x18",
+     "kind": "ref"
+    },
+    {
+     "name": "mapPanel",
+     "type": "MapPanelController",
+     "offset": "0x1C",
+     "kind": "ref"
+    },
+    {
+     "name": "joystick",
+     "type": "MobileJoystick",
+     "offset": "0x20",
+     "kind": "ref"
+    },
+    {
+     "name": "mobileLook",
+     "type": "MobileLook",
+     "offset": "0x24",
+     "kind": "ref"
+    },
+    {
+     "name": "walkSpeed",
+     "type": "float",
+     "offset": "0x28",
+     "kind": "scalar"
+    },
+    {
+     "name": "sprintStartSpeed",
+     "type": "float",
+     "offset": "0x2C",
+     "kind": "scalar"
+    },
+    {
+     "name": "sprintMaxSpeed",
+     "type": "float",
+     "offset": "0x30",
+     "kind": "scalar"
+    },
+    {
+     "name": "sprintAccelerationTime",
+     "type": "float",
+     "offset": "0x34",
+     "kind": "scalar"
+    },
+    {
+     "name": "mouseSensitivityPC",
+     "type": "float",
+     "offset": "0x38",
+     "kind": "scalar"
+    },
+    {
+     "name": "mouseSensitivityMobile",
+     "type": "float",
+     "offset": "0x3C",
+     "kind": "scalar"
+    },
+    {
+     "name": "mobileSensitivityFactor",
+     "type": "float",
+     "offset": "0x40",
+     "kind": "scalar"
+    },
+    {
+     "name": "lookUpClamp",
+     "type": "float",
+     "offset": "0x44",
+     "kind": "scalar"
+    },
+    {
+     "name": "lookDownClamp",
+     "type": "float",
+     "offset": "0x48",
+     "kind": "scalar"
+    },
+    {
+     "name": "cameraTransform",
+     "type": "Transform",
+     "offset": "0x4C",
+     "kind": "ref"
+    },
+    {
+     "name": "lookSmoothTime",
+     "type": "float",
+     "offset": "0x50",
+     "kind": "scalar"
+    },
+    {
+     "name": "rotationSmoothSpeed",
+     "type": "float",
+     "offset": "0x54",
+     "kind": "scalar"
+    },
+    {
+     "name": "normalSwayAmplitude",
+     "type": "float",
+     "offset": "0x58",
+     "kind": "scalar"
+    },
+    {
+     "name": "sprintSwayAmplitude",
+     "type": "float",
+     "offset": "0x5C",
+     "kind": "scalar"
+    },
+    {
+     "name": "normalSwaySpeed",
+     "type": "float",
+     "offset": "0x60",
+     "kind": "scalar"
+    },
+    {
+     "name": "sprintSwaySpeed",
+     "type": "float",
+     "offset": "0x64",
+     "kind": "scalar"
+    },
+    {
+     "name": "swayTransitionSpeed",
+     "type": "float",
+     "offset": "0x68",
+     "kind": "scalar"
+    },
+    {
+     "name": "headBobAmount",
+     "type": "float",
+     "offset": "0x6C",
+     "kind": "scalar"
+    },
+    {
+     "name": "headBobSpeed",
+     "type": "float",
+     "offset": "0x70",
+     "kind": "scalar"
+    },
+    {
+     "name": "headBobSmooth",
+     "type": "float",
+     "offset": "0x74",
+     "kind": "scalar"
+    },
+    {
+     "name": "sprintBreathAudio",
+     "type": "AudioSource",
+     "offset": "0x78",
+     "kind": "ref"
+    },
+    {
+     "name": "maxSprintAudioVolume",
+     "type": "float",
+     "offset": "0x7C",
+     "kind": "scalar"
+    },
+    {
+     "name": "controller",
+     "type": "CharacterController",
+     "offset": "0x80",
+     "kind": "ref"
+    },
+    {
+     "name": "xRotation",
+     "type": "float",
+     "offset": "0x84",
+     "kind": "scalar"
+    },
+    {
+     "name": "yRotation",
+     "type": "float",
+     "offset": "0x88",
+     "kind": "scalar"
+    },
+    {
+     "name": "smoothXRot",
+     "type": "float",
+     "offset": "0x8C",
+     "kind": "scalar"
+    },
+    {
+     "name": "smoothYRot",
+     "type": "float",
+     "offset": "0x90",
+     "kind": "scalar"
+    },
+    {
+     "name": "xRotVelocity",
+     "type": "float",
+     "offset": "0x94",
+     "kind": "scalar"
+    },
+    {
+     "name": "yRotVelocity",
+     "type": "float",
+     "offset": "0x98",
+     "kind": "scalar"
+    },
+    {
+     "name": "currentSpeed",
+     "type": "float",
+     "offset": "0x9C",
+     "kind": "scalar"
+    },
+    {
+     "name": "sprintTimer",
+     "type": "float",
+     "offset": "0xA0",
+     "kind": "scalar"
+    },
+    {
+     "name": "isSprinting",
+     "type": "bool",
+     "offset": "0xA4",
+     "kind": "scalar"
+    },
+    {
+     "name": "currentSwayAmplitude",
+     "type": "float",
+     "offset": "0xA8",
+     "kind": "scalar"
+    },
+    {
+     "name": "currentSwaySpeed",
+     "type": "float",
+     "offset": "0xAC",
+     "kind": "scalar"
+    },
+    {
+     "name": "swayTime",
+     "type": "float",
+     "offset": "0xB0",
+     "kind": "scalar"
+    },
+    {
+     "name": "headBobTimer",
+     "type": "float",
+     "offset": "0xB4",
+     "kind": "scalar"
+    },
+    {
+     "name": "baseCameraY",
+     "type": "float",
+     "offset": "0xB8",
+     "kind": "scalar"
+    },
+    {
+     "name": "smoothedSpeed",
+     "type": "float",
+     "offset": "0xBC",
+     "kind": "scalar"
+    },
+    {
+     "name": "currentOffset",
+     "type": "Vector3",
+     "offset": "0xC0",
+     "kind": "scalar"
+    },
+    {
+     "name": "isCursorLocked",
+     "type": "bool",
+     "offset": "0xCC",
+     "kind": "scalar"
+    },
+    {
+     "name": "pointerLockCooldown",
+     "type": "float",
+     "offset": "0xD0",
+     "kind": "scalar"
+    },
+    {
+     "name": "requireFreshClick",
+     "type": "bool",
+     "offset": "0xD4",
+     "kind": "scalar"
+    }
+   ],
+   "methods": [
+    {
+     "name": "Start",
+     "address": 4002,
+     "rva": "0xFA2",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Update",
+     "address": 4003,
+     "rva": "0xFA3",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "LateUpdate",
+     "address": 4004,
+     "rva": "0xFA4",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "IsMenuOpen",
+     "address": 4005,
+     "rva": "0xFA5",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "IsCluePanelOpen",
+     "address": 4006,
+     "rva": "0xFA6",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "IsFilesPanelOpen",
+     "address": 4007,
+     "rva": "0xFA7",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "IsMapPanelOpen",
+     "address": 4008,
+     "rva": "0xFA8",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "HandleCursorLock",
+     "address": 4009,
+     "rva": "0xFA9",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "OnApplicationFocus",
+     "address": 4010,
+     "rva": "0xFAA",
+     "ret": "void",
+     "params": "bool hasFocus"
+    },
+    {
+     "name": "HandleLook",
+     "address": 4011,
+     "rva": "0xFAB",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "HandleSprint",
+     "address": 4012,
+     "rva": "0xFAC",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "HandleMovement",
+     "address": 4013,
+     "rva": "0xFAD",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ApplyCameraMotion",
+     "address": 4014,
+     "rva": "0xFAE",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "UpdateSprintBreathAudio",
+     "address": 4015,
+     "rva": "0xFAF",
+     "ret": "void",
+     "params": ""
+    }
+   ]
+  },
+  "MonsterController": {
+   "role": "chase/catch logic",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "player",
+     "type": "Transform",
+     "offset": "0x10",
+     "kind": "ref"
+    },
+    {
+     "name": "playerCamera",
+     "type": "Camera",
+     "offset": "0x14",
+     "kind": "ref"
+    },
+    {
+     "name": "monsterCamera",
+     "type": "Camera",
+     "offset": "0x18",
+     "kind": "ref"
+    },
+    {
+     "name": "visibleLayers",
+     "type": "LayerMask",
+     "offset": "0x1C",
+     "kind": "ref"
+    },
+    {
+     "name": "checkInterval",
+     "type": "float",
+     "offset": "0x20",
+     "kind": "scalar"
+    },
+    {
+     "name": "rayDistance",
+     "type": "float",
+     "offset": "0x24",
+     "kind": "scalar"
+    },
+    {
+     "name": "fov",
+     "type": "float",
+     "offset": "0x28",
+     "kind": "scalar"
+    },
+    {
+     "name": "catchDistance",
+     "type": "float",
+     "offset": "0x2C",
+     "kind": "scalar"
+    },
+    {
+     "name": "catchSequenceDuration",
+     "type": "float",
+     "offset": "0x30",
+     "kind": "scalar"
+    },
+    {
+     "name": "monsterRespawnPoint",
+     "type": "Transform",
+     "offset": "0x34",
+     "kind": "ref"
+    },
+    {
+     "name": "deathManager",
+     "type": "DeathManager",
+     "offset": "0x38",
+     "kind": "ref"
+    },
+    {
+     "name": "memoryProgression",
+     "type": "MemoryProgression",
+     "offset": "0x3C",
+     "kind": "ref"
+    },
+    {
+     "name": "memoryPenaltyOnCatch",
+     "type": "float",
+     "offset": "0x40",
+     "kind": "scalar"
+    },
+    {
+     "name": "catchAudio",
+     "type": "AudioSource",
+     "offset": "0x44",
+     "kind": "ref"
+    },
+    {
+     "name": "agent",
+     "type": "NavMeshAgent",
+     "offset": "0x48",
+     "kind": "ref"
+    },
+    {
+     "name": "animator",
+     "type": "Animator",
+     "offset": "0x4C",
+     "kind": "ref"
+    },
+    {
+     "name": "checkTimer",
+     "type": "float",
+     "offset": "0x50",
+     "kind": "scalar"
+    },
+    {
+     "name": "isSeen",
+     "type": "bool",
+     "offset": "0x54",
+     "kind": "scalar"
+    },
+    {
+     "name": "isCatching",
+     "type": "bool",
+     "offset": "0x55",
+     "kind": "scalar"
+    }
+   ],
+   "methods": [
+    {
+     "name": "Start",
+     "address": 3985,
+     "rva": "0xF91",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Update",
+     "address": 3986,
+     "rva": "0xF92",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "CheckIfSeen",
+     "address": 3987,
+     "rva": "0xF93",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "FreezeMonster",
+     "address": 3988,
+     "rva": "0xF94",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ResumeMonster",
+     "address": 3989,
+     "rva": "0xF95",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "CheckSide",
+     "address": 3990,
+     "rva": "0xF96",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "CatchSequence",
+     "address": 3991,
+     "rva": "0xF97",
+     "ret": "IEnumerator",
+     "params": ""
+    }
+   ]
+  },
+  "MonsterAI": {
+   "role": "patrol/chase FSM",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "animator",
+     "type": "Animator",
+     "offset": "0x10",
+     "kind": "ref"
+    },
+    {
+     "name": "agent",
+     "type": "NavMeshAgent",
+     "offset": "0x14",
+     "kind": "ref"
+    },
+    {
+     "name": "player",
+     "type": "Transform",
+     "offset": "0x18",
+     "kind": "ref"
+    },
+    {
+     "name": "detectionCollider",
+     "type": "BoxCollider",
+     "offset": "0x1C",
+     "kind": "ref"
+    },
+    {
+     "name": "pathParentName",
+     "type": "string",
+     "offset": "0x20",
+     "kind": "scalar"
+    },
+    {
+     "name": "lookAroundTime",
+     "type": "float",
+     "offset": "0x24",
+     "kind": "scalar"
+    },
+    {
+     "name": "disappearTime",
+     "type": "float",
+     "offset": "0x28",
+     "kind": "scalar"
+    },
+    {
+     "name": "playerLayer",
+     "type": "LayerMask",
+     "offset": "0x2C",
+     "kind": "ref"
+    },
+    {
+     "name": "pathNodes",
+     "type": "List<Transform>",
+     "offset": "0x30",
+     "kind": "ref"
+    },
+    {
+     "name": "currentNodeIndex",
+     "type": "int",
+     "offset": "0x34",
+     "kind": "scalar"
+    },
+    {
+     "name": "state",
+     "type": "MonsterAI.MonsterState",
+     "offset": "0x38",
+     "kind": "ref"
+    }
+   ],
+   "methods": [
+    {
+     "name": "Awake",
+     "address": 4710,
+     "rva": "0x1266",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Start",
+     "address": 4711,
+     "rva": "0x1267",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "FindClosestVisibleNodeIndex",
+     "address": 4712,
+     "rva": "0x1268",
+     "ret": "int",
+     "params": ""
+    },
+    {
+     "name": "BirthSequence",
+     "address": 4713,
+     "rva": "0x1269",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "MoveToNextNode",
+     "address": 4714,
+     "rva": "0x126A",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Update",
+     "address": 4715,
+     "rva": "0x126B",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "LookAround",
+     "address": 4716,
+     "rva": "0x126C",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "ScreamAndChase",
+     "address": 4717,
+     "rva": "0x126D",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "DisappearAfterTime",
+     "address": 4718,
+     "rva": "0x126E",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "VisibleToPlayer",
+     "address": 4719,
+     "rva": "0x126F",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "OnAnimatorMove",
+     "address": 4720,
+     "rva": "0x1270",
+     "ret": "void",
+     "params": ""
+    }
+   ]
+  },
+  "MonsterNavController": {
+   "role": "nav wander",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "agent",
+     "type": "NavMeshAgent",
+     "offset": "0x10",
+     "kind": "ref"
+    },
+    {
+     "name": "pointsParent",
+     "type": "Transform",
+     "offset": "0x14",
+     "kind": "ref"
+    },
+    {
+     "name": "interestPoints",
+     "type": "Transform[]",
+     "offset": "0x18",
+     "kind": "ref"
+    },
+    {
+     "name": "maxAgentSpeed",
+     "type": "float",
+     "offset": "0x1C",
+     "kind": "scalar"
+    },
+    {
+     "name": "speedChangeInterval",
+     "type": "float",
+     "offset": "0x20",
+     "kind": "scalar"
+    },
+    {
+     "name": "speedLerp",
+     "type": "float",
+     "offset": "0x24",
+     "kind": "scalar"
+    },
+    {
+     "name": "rotationSpeed",
+     "type": "float",
+     "offset": "0x28",
+     "kind": "scalar"
+    },
+    {
+     "name": "stopChance",
+     "type": "float",
+     "offset": "0x2C",
+     "kind": "scalar"
+    },
+    {
+     "name": "animator",
+     "type": "Animator",
+     "offset": "0x30",
+     "kind": "ref"
+    },
+    {
+     "name": "targetSpeed",
+     "type": "float",
+     "offset": "0x34",
+     "kind": "scalar"
+    },
+    {
+     "name": "currentSpeed",
+     "type": "float",
+     "offset": "0x38",
+     "kind": "scalar"
+    },
+    {
+     "name": "speedTimer",
+     "type": "float",
+     "offset": "0x3C",
+     "kind": "scalar"
+    },
+    {
+     "name": "lastPointIndex",
+     "type": "int",
+     "offset": "0x40",
+     "kind": "scalar"
+    }
+   ],
+   "methods": [
+    {
+     "name": "Start",
+     "address": 4283,
+     "rva": "0x10BB",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "SetupInterestPoints",
+     "address": 4284,
+     "rva": "0x10BC",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Update",
+     "address": 4285,
+     "rva": "0x10BD",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "GoToNextPoint",
+     "address": 4286,
+     "rva": "0x10BE",
+     "ret": "void",
+     "params": ""
+    }
+   ]
+  },
+  "StaticVisionMonster": {
+   "role": "static vision",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "player",
+     "type": "Transform",
+     "offset": "0x10",
+     "kind": "ref"
+    },
+    {
+     "name": "playerCamera",
+     "type": "Camera",
+     "offset": "0x14",
+     "kind": "ref"
+    },
+    {
+     "name": "spawnPoints",
+     "type": "Transform[]",
+     "offset": "0x18",
+     "kind": "ref"
+    },
+    {
+     "name": "visionDistance",
+     "type": "float",
+     "offset": "0x1C",
+     "kind": "scalar"
+    },
+    {
+     "name": "minDistanceToPlayer",
+     "type": "float",
+     "offset": "0x20",
+     "kind": "scalar"
+    }
+   ],
+   "methods": [
+    {
+     "name": "Start",
+     "address": 4057,
+     "rva": "0xFD9",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Update",
+     "address": 4058,
+     "rva": "0xFDA",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "RotateTowardsPlayer",
+     "address": 4059,
+     "rva": "0xFDB",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "HasLineOfSightToPlayer",
+     "address": 4060,
+     "rva": "0xFDC",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "IsMonsterInPlayerView",
+     "address": 4061,
+     "rva": "0xFDD",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "IsObstacleBetweenPlayerAndMonster",
+     "address": 4062,
+     "rva": "0xFDE",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "Respawn",
+     "address": 4063,
+     "rva": "0xFDF",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "TeleportToHiddenPoint",
+     "address": 4064,
+     "rva": "0xFE0",
+     "ret": "void",
+     "params": ""
+    }
+   ]
+  },
+  "MemoryProgression": {
+   "role": "memory % state",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "minValue",
+     "type": "float",
+     "offset": "0x10",
+     "kind": "scalar"
+    },
+    {
+     "name": "maxValue",
+     "type": "float",
+     "offset": "0x14",
+     "kind": "scalar"
+    },
+    {
+     "name": "startValue",
+     "type": "float",
+     "offset": "0x18",
+     "kind": "scalar"
+    },
+    {
+     "name": "objectAtMax",
+     "type": "GameObject",
+     "offset": "0x1C",
+     "kind": "ref"
+    },
+    {
+     "name": "objectAfterDelay",
+     "type": "GameObject",
+     "offset": "0x20",
+     "kind": "ref"
+    },
+    {
+     "name": "tickAudio",
+     "type": "AudioSource",
+     "offset": "0x24",
+     "kind": "ref"
+    },
+    {
+     "name": "progressCanvasGroup",
+     "type": "CanvasGroup",
+     "offset": "0x28",
+     "kind": "ref"
+    },
+    {
+     "name": "uiBars",
+     "type": "RectTransform[]",
+     "offset": "0x2C",
+     "kind": "ref"
+    },
+    {
+     "name": "outroObject",
+     "type": "OutroSequenceSimple",
+     "offset": "0x30",
+     "kind": "ref"
+    },
+    {
+     "name": "introTitle",
+     "type": "BackroomsIntroTrigger",
+     "offset": "0x34",
+     "kind": "ref"
+    },
+    {
+     "name": "targetRawImage",
+     "type": "RawImage",
+     "offset": "0x38",
+     "kind": "ref"
+    },
+    {
+     "name": "albedoList",
+     "type": "Texture[]",
+     "offset": "0x3C",
+     "kind": "ref"
+    },
+    {
+     "name": "targetMaterial",
+     "type": "Material",
+     "offset": "0x40",
+     "kind": "ref"
+    },
+    {
+     "name": "currentValue",
+     "type": "float",
+     "offset": "0x44",
+     "kind": "scalar"
+    },
+    {
+     "name": "uiText",
+     "type": "TMP_Text",
+     "offset": "0x48",
+     "kind": "ref"
+    },
+    {
+     "name": "canTrigger",
+     "type": "bool",
+     "offset": "0x4C",
+     "kind": "scalar"
+    },
+    {
+     "name": "firstMemoryHintShown",
+     "type": "bool",
+     "offset": "0x4D",
+     "kind": "scalar"
+    },
+    {
+     "name": "menuManager",
+     "type": "MainMenuManager",
+     "offset": "0x50",
+     "kind": "ref"
+    },
+    {
+     "name": "filesPanel",
+     "type": "FilesPanelController",
+     "offset": "0x54",
+     "kind": "ref"
+    }
+   ],
+   "methods": [
+    {
+     "name": "get_CurrentValue",
+     "address": 4124,
+     "rva": "0x101C",
+     "ret": "float",
+     "params": ""
+    },
+    {
+     "name": "Awake",
+     "address": 4125,
+     "rva": "0x101D",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Start",
+     "address": 4126,
+     "rva": "0x101E",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "SetMemory",
+     "address": 4127,
+     "rva": "0x101F",
+     "ret": "void",
+     "params": "float value"
+    },
+    {
+     "name": "AddMemory",
+     "address": 4128,
+     "rva": "0x1020",
+     "ret": "void",
+     "params": "float amount"
+    },
+    {
+     "name": "RemoveMemory",
+     "address": 4129,
+     "rva": "0x1021",
+     "ret": "void",
+     "params": "float amount"
+    },
+    {
+     "name": "SetMemorySilent",
+     "address": 4130,
+     "rva": "0x1022",
+     "ret": "void",
+     "params": "float value"
+    },
+    {
+     "name": "UpdateDisplay",
+     "address": 4131,
+     "rva": "0x1023",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "UpdateUIBars",
+     "address": 4132,
+     "rva": "0x1024",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "PlayProgressFX",
+     "address": 4133,
+     "rva": "0x1025",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "ApplyRandomAlbedo",
+     "address": 4134,
+     "rva": "0x1026",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "MaxMemorySequence",
+     "address": 4135,
+     "rva": "0x1027",
+     "ret": "IEnumerator",
+     "params": ""
+    }
+   ]
+  },
+  "BatterySystem": {
+   "role": "battery state",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "maxCharge",
+     "type": "float",
+     "offset": "0x10",
+     "kind": "scalar"
+    },
+    {
+     "name": "drainPerSecond",
+     "type": "float",
+     "offset": "0x14",
+     "kind": "scalar"
+    },
+    {
+     "name": "currentPercent",
+     "type": "float",
+     "offset": "0x18",
+     "kind": "scalar"
+    },
+    {
+     "name": "currentCharge",
+     "type": "float",
+     "offset": "0x1C",
+     "kind": "scalar"
+    },
+    {
+     "name": "batteryQuarters",
+     "type": "GameObject[]",
+     "offset": "0x20",
+     "kind": "ref"
+    },
+    {
+     "name": "noEnergyObject",
+     "type": "GameObject",
+     "offset": "0x24",
+     "kind": "ref"
+    },
+    {
+     "name": "blinkSpeed",
+     "type": "float",
+     "offset": "0x28",
+     "kind": "scalar"
+    },
+    {
+     "name": "blinkTimer",
+     "type": "float",
+     "offset": "0x2C",
+     "kind": "scalar"
+    },
+    {
+     "name": "deathManager",
+     "type": "DeathManager",
+     "offset": "0x30",
+     "kind": "ref"
+    },
+    {
+     "name": "batteryDeathSound",
+     "type": "AudioSource",
+     "offset": "0x34",
+     "kind": "ref"
+    },
+    {
+     "name": "batteryDead",
+     "type": "bool",
+     "offset": "0x38",
+     "kind": "scalar"
+    }
+   ],
+   "methods": [
+    {
+     "name": "Start",
+     "address": 4066,
+     "rva": "0xFE2",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Update",
+     "address": 4067,
+     "rva": "0xFE3",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Drain",
+     "address": 4068,
+     "rva": "0xFE4",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "CheckDeath",
+     "address": 4069,
+     "rva": "0xFE5",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "UpdateInspector",
+     "address": 4070,
+     "rva": "0xFE6",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "UpdateVisual",
+     "address": 4071,
+     "rva": "0xFE7",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Activate",
+     "address": 4072,
+     "rva": "0xFE8",
+     "ret": "void",
+     "params": "int[] indexes"
+    },
+    {
+     "name": "ApplyBlink",
+     "address": 4073,
+     "rva": "0xFE9",
+     "ret": "void",
+     "params": "int blinkIndex"
+    },
+    {
+     "name": "Recharge",
+     "address": 4074,
+     "rva": "0xFEA",
+     "ret": "void",
+     "params": "float amount"
+    },
+    {
+     "name": "SetBatteryFull",
+     "address": 4075,
+     "rva": "0xFEB",
+     "ret": "void",
+     "params": ""
+    }
+   ]
+  },
+  "MiniMemoryPickup": {
+   "role": "memory pickup",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "memorySystem",
+     "type": "MemoryProgression",
+     "offset": "0x10",
+     "kind": "ref"
+    },
+    {
+     "name": "memoryMin",
+     "type": "float",
+     "offset": "0x14",
+     "kind": "scalar"
+    },
+    {
+     "name": "memoryMax",
+     "type": "float",
+     "offset": "0x18",
+     "kind": "scalar"
+    },
+    {
+     "name": "spawnParent",
+     "type": "Transform",
+     "offset": "0x1C",
+     "kind": "ref"
+    },
+    {
+     "name": "spawnPoints",
+     "type": "Transform[]",
+     "offset": "0x20",
+     "kind": "ref"
+    },
+    {
+     "name": "audioSource",
+     "type": "AudioSource",
+     "offset": "0x24",
+     "kind": "ref"
+    },
+    {
+     "name": "pickupSound",
+     "type": "AudioClip",
+     "offset": "0x28",
+     "kind": "ref"
+    },
+    {
+     "name": "minPitch",
+     "type": "float",
+     "offset": "0x2C",
+     "kind": "scalar"
+    },
+    {
+     "name": "maxPitch",
+     "type": "float",
+     "offset": "0x30",
+     "kind": "scalar"
+    },
+    {
+     "name": "minVolume",
+     "type": "float",
+     "offset": "0x34",
+     "kind": "scalar"
+    },
+    {
+     "name": "maxVolume",
+     "type": "float",
+     "offset": "0x38",
+     "kind": "scalar"
+    },
+    {
+     "name": "pickupParticles",
+     "type": "ParticleSystem",
+     "offset": "0x3C",
+     "kind": "ref"
+    }
+   ],
+   "methods": [
+    {
+     "name": "Start",
+     "address": 4046,
+     "rva": "0xFCE",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "OnTriggerEnter",
+     "address": 4047,
+     "rva": "0xFCF",
+     "ret": "void",
+     "params": "Collider other"
+    },
+    {
+     "name": "Pickup",
+     "address": 4048,
+     "rva": "0xFD0",
+     "ret": "void",
+     "params": ""
+    }
+   ]
+  },
+  "PickupMemoryDistanceGlobal": {
+   "role": "global memory pickup",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "memorySystem",
+     "type": "MemoryProgression",
+     "offset": "0x10",
+     "kind": "ref"
+    },
+    {
+     "name": "memoryMin",
+     "type": "float",
+     "offset": "0x14",
+     "kind": "scalar"
+    },
+    {
+     "name": "memoryMax",
+     "type": "float",
+     "offset": "0x18",
+     "kind": "scalar"
+    },
+    {
+     "name": "activateOnDistance",
+     "type": "GameObject[]",
+     "offset": "0x1C",
+     "kind": "ref"
+    },
+    {
+     "name": "audioSource",
+     "type": "AudioSource",
+     "offset": "0x20",
+     "kind": "ref"
+    },
+    {
+     "name": "completeSound",
+     "type": "AudioClip",
+     "offset": "0x24",
+     "kind": "ref"
+    },
+    {
+     "name": "loadingSound",
+     "type": "AudioClip",
+     "offset": "0x28",
+     "kind": "ref"
+    },
+    {
+     "name": "playerCamera",
+     "type": "Camera",
+     "offset": "0x2C",
+     "kind": "ref"
+    },
+    {
+     "name": "normalFOV",
+     "type": "float",
+     "offset": "0x30",
+     "kind": "scalar"
+    },
+    {
+     "name": "zoomFOV",
+     "type": "float",
+     "offset": "0x34",
+     "kind": "scalar"
+    },
+    {
+     "name": "fovZoomDuration",
+     "type": "float",
+     "offset": "0x38",
+     "kind": "scalar"
+    },
+    {
+     "name": "fovHoldDuration",
+     "type": "float",
+     "offset": "0x3C",
+     "kind": "scalar"
+    },
+    {
+     "name": "fovDezoomDuration",
+     "type": "float",
+     "offset": "0x40",
+     "kind": "scalar"
+    },
+    {
+     "name": "completionVisual",
+     "type": "GameObject",
+     "offset": "0x44",
+     "kind": "ref"
+    },
+    {
+     "name": "visualDuration",
+     "type": "float",
+     "offset": "0x48",
+     "kind": "scalar"
+    },
+    {
+     "name": "resourcesFolderName",
+     "type": "string",
+     "offset": "0x4C",
+     "kind": "scalar"
+    },
+    {
+     "name": "loadingPanel",
+     "type": "GameObject",
+     "offset": "0x50",
+     "kind": "ref"
+    },
+    {
+     "name": "loadingBar",
+     "type": "RectTransform",
+     "offset": "0x54",
+     "kind": "ref"
+    },
+    {
+     "name": "loadingBarMaxScale",
+     "type": "float",
+     "offset": "0x58",
+     "kind": "scalar"
+    },
+    {
+     "name": "holdObject",
+     "type": "GameObject",
+     "offset": "0x5C",
+     "kind": "ref"
+    },
+    {
+     "name": "activationDistance",
+     "type": "float",
+     "offset": "0x60",
+     "kind": "scalar"
+    },
+    {
+     "name": "pickupDistance",
+     "type": "float",
+     "offset": "0x64",
+     "kind": "scalar"
+    },
+    {
+     "name": "minRespawnDistance",
+     "type": "float",
+     "offset": "0x68",
+     "kind": "scalar"
+    },
+    {
+     "name": "autoRespawnTime",
+     "type": "float",
+     "offset": "0x6C",
+     "kind": "scalar"
+    },
+    {
+     "name": "checkInterval",
+     "type": "float",
+     "offset": "0x70",
+     "kind": "scalar"
+    },
+    {
+     "name": "player",
+     "type": "Transform",
+     "offset": "0x74",
+     "kind": "ref"
+    },
+    {
+     "name": "nextCheckTime",
+     "type": "float",
+     "offset": "0x78",
+     "kind": "scalar"
+    },
+    {
+     "name": "nextAutoRespawnTime",
+     "type": "float",
+     "offset": "0x7C",
+     "kind": "scalar"
+    },
+    {
+     "name": "completionMaterial",
+     "type": "Material",
+     "offset": "0x80",
+     "kind": "ref"
+    },
+    {
+     "name": "completionColor",
+     "type": "Color",
+     "offset": "0x84",
+     "kind": "scalar"
+    },
+    {
+     "name": "rewardTextures",
+     "type": "Texture2D[]",
+     "offset": "0x94",
+     "kind": "ref"
+    },
+    {
+     "name": "sequenceStarted",
+     "type": "bool",
+     "offset": "0x98",
+     "kind": "scalar"
+    }
+   ],
+   "methods": [
+    {
+     "name": "Start",
+     "address": 4162,
+     "rva": "0x1042",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Update",
+     "address": 4163,
+     "rva": "0x1043",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "DistanceCheck",
+     "address": 4164,
+     "rva": "0x1044",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "IsVisibleToPlayer",
+     "address": 4165,
+     "rva": "0x1045",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "PickupSequence",
+     "address": 4166,
+     "rva": "0x1046",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "LoadingBarRoutine",
+     "address": 4167,
+     "rva": "0x1047",
+     "ret": "IEnumerator",
+     "params": "float duration"
+    },
+    {
+     "name": "PrepareCompletionVisual",
+     "address": 4168,
+     "rva": "0x1048",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "CancelSequence",
+     "address": 4169,
+     "rva": "0x1049",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "AutoRespawn",
+     "address": 4170,
+     "rva": "0x104A",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "MarkCurrentSpawnPoint",
+     "address": 4171,
+     "rva": "0x104B",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "UnmarkCurrentSpawnPoint",
+     "address": 4172,
+     "rva": "0x104C",
+     "ret": "void",
+     "params": ""
+    }
+   ]
+  },
+  "DeathManager": {
+   "role": "deaths/hearts/respawn",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "player",
+     "type": "Transform",
+     "offset": "0x10",
+     "kind": "ref"
+    },
+    {
+     "name": "respawnPoints",
+     "type": "Transform[]",
+     "offset": "0x14",
+     "kind": "ref"
+    },
+    {
+     "name": "respawnVerticalOffset",
+     "type": "float",
+     "offset": "0x18",
+     "kind": "scalar"
+    },
+    {
+     "name": "deathPanel",
+     "type": "GameObject",
+     "offset": "0x1C",
+     "kind": "ref"
+    },
+    {
+     "name": "menuPanel",
+     "type": "GameObject",
+     "offset": "0x20",
+     "kind": "ref"
+    },
+    {
+     "name": "hearts",
+     "type": "Image[]",
+     "offset": "0x24",
+     "kind": "ref"
+    },
+    {
+     "name": "lostText",
+     "type": "TMP_Text",
+     "offset": "0x28",
+     "kind": "ref"
+    },
+    {
+     "name": "heartBlinkDuration",
+     "type": "float",
+     "offset": "0x2C",
+     "kind": "scalar"
+    },
+    {
+     "name": "displayDuration",
+     "type": "float",
+     "offset": "0x30",
+     "kind": "scalar"
+    },
+    {
+     "name": "lostDisplayDuration",
+     "type": "float",
+     "offset": "0x34",
+     "kind": "scalar"
+    },
+    {
+     "name": "extraLifeButton",
+     "type": "Button",
+     "offset": "0x38",
+     "kind": "ref"
+    },
+    {
+     "name": "timerBar",
+     "type": "RawImage",
+     "offset": "0x3C",
+     "kind": "ref"
+    },
+    {
+     "name": "extraLifeDuration",
+     "type": "float",
+     "offset": "0x40",
+     "kind": "scalar"
+    },
+    {
+     "name": "reviveHoverScale",
+     "type": "float",
+     "offset": "0x44",
+     "kind": "scalar"
+    },
+    {
+     "name": "reviveScaleSpeed",
+     "type": "float",
+     "offset": "0x48",
+     "kind": "scalar"
+    },
+    {
+     "name": "batterySystem",
+     "type": "BatterySystem",
+     "offset": "0x4C",
+     "kind": "ref"
+    },
+    {
+     "name": "audioSource",
+     "type": "AudioSource",
+     "offset": "0x50",
+     "kind": "ref"
+    },
+    {
+     "name": "deathManagerSound",
+     "type": "AudioClip",
+     "offset": "0x54",
+     "kind": "ref"
+    },
+    {
+     "name": "sfxSource",
+     "type": "AudioSource",
+     "offset": "0x58",
+     "kind": "ref"
+    },
+    {
+     "name": "reviveClickSound",
+     "type": "AudioClip",
+     "offset": "0x5C",
+     "kind": "ref"
+    },
+    {
+     "name": "reviveVolume",
+     "type": "float",
+     "offset": "0x60",
+     "kind": "scalar"
+    },
+    {
+     "name": "currentHearts",
+     "type": "int",
+     "offset": "0x64",
+     "kind": "scalar"
+    },
+    {
+     "name": "extraLifeChosen",
+     "type": "bool",
+     "offset": "0x68",
+     "kind": "scalar"
+    },
+    {
+     "name": "extraLifeCoroutine",
+     "type": "Coroutine",
+     "offset": "0x6C",
+     "kind": "ref"
+    },
+    {
+     "name": "extraLifeTimer",
+     "type": "float",
+     "offset": "0x70",
+     "kind": "scalar"
+    },
+    {
+     "name": "reviveOriginalScale",
+     "type": "Vector3",
+     "offset": "0x74",
+     "kind": "scalar"
+    },
+    {
+     "name": "reviveTargetScale",
+     "type": "Vector3",
+     "offset": "0x80",
+     "kind": "scalar"
+    },
+    {
+     "name": "reviveImage",
+     "type": "Image",
+     "offset": "0x8C",
+     "kind": "ref"
+    },
+    {
+     "name": "reviveOriginalColor",
+     "type": "Color",
+     "offset": "0x90",
+     "kind": "scalar"
+    }
+   ],
+   "methods": [
+    {
+     "name": "get_IsDeathScreenActive",
+     "address": 3898,
+     "rva": "0xF3A",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "Start",
+     "address": 3899,
+     "rva": "0xF3B",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Update",
+     "address": 3900,
+     "rva": "0xF3C",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "SetupReviveButtonFeedback",
+     "address": 3901,
+     "rva": "0xF3D",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "AddTrigger",
+     "address": 3902,
+     "rva": "0xF3E",
+     "ret": "void",
+     "params": "EventTrigger trigger, EventTriggerType type, Action<BaseEventData> callback"
+    },
+    {
+     "name": "TriggerDeath",
+     "address": 3903,
+     "rva": "0xF3F",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "DeathSequence",
+     "address": 3904,
+     "rva": "0xF40",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "ExtraLifeRoutine",
+     "address": 3905,
+     "rva": "0xF41",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "OnExtraLifeClicked",
+     "address": 3906,
+     "rva": "0xF42",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "FinalDeath",
+     "address": 3907,
+     "rva": "0xF43",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "PlayReviveSound",
+     "address": 3908,
+     "rva": "0xF44",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "BlinkHeart",
+     "address": 3909,
+     "rva": "0xF45",
+     "ret": "IEnumerator",
+     "params": "Image heart"
+    },
+    {
+     "name": "RespawnPlayer",
+     "address": 3910,
+     "rva": "0xF46",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ReenableCC",
+     "address": 3911,
+     "rva": "0xF47",
+     "ret": "IEnumerator",
+     "params": "CharacterController cc, Rigidbody rb"
+    },
+    {
+     "name": "SetCursorState",
+     "address": 3912,
+     "rva": "0xF48",
+     "ret": "void",
+     "params": "bool state"
+    },
+    {
+     "name": "ResetHearts",
+     "address": 3913,
+     "rva": "0xF49",
+     "ret": "void",
+     "params": ""
+    }
+   ]
+  },
+  "ClueManager": {
+   "role": "clue panel/pause",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "currentLanguage",
+     "type": "ClueManager.Language",
+     "offset": "0x10",
+     "kind": "ref"
+    },
+    {
+     "name": "togglePanelKey",
+     "type": "KeyCode",
+     "offset": "0x14",
+     "kind": "ref"
+    },
+    {
+     "name": "clueKey",
+     "type": "KeyCode",
+     "offset": "0x18",
+     "kind": "ref"
+    },
+    {
+     "name": "playerTransform",
+     "type": "Transform",
+     "offset": "0x1C",
+     "kind": "ref"
+    },
+    {
+     "name": "deathManager",
+     "type": "DeathManager",
+     "offset": "0x20",
+     "kind": "ref"
+    },
+    {
+     "name": "panel",
+     "type": "GameObject",
+     "offset": "0x24",
+     "kind": "ref"
+    },
+    {
+     "name": "clueButton",
+     "type": "Button",
+     "offset": "0x28",
+     "kind": "ref"
+    },
+    {
+     "name": "mobileOpenButton",
+     "type": "Button",
+     "offset": "0x2C",
+     "kind": "ref"
+    },
+    {
+     "name": "mainText",
+     "type": "TMP_Text",
+     "offset": "0x30",
+     "kind": "ref"
+    },
+    {
+     "name": "clueButtonText",
+     "type": "TMP_Text",
+     "offset": "0x34",
+     "kind": "ref"
+    },
+    {
+     "name": "mobileControlsToHide",
+     "type": "GameObject[]",
+     "offset": "0x38",
+     "kind": "ref"
+    },
+    {
+     "name": "audioSource",
+     "type": "AudioSource",
+     "offset": "0x3C",
+     "kind": "ref"
+    },
+    {
+     "name": "openSound",
+     "type": "AudioClip",
+     "offset": "0x40",
+     "kind": "ref"
+    },
+    {
+     "name": "closeSound",
+     "type": "AudioClip",
+     "offset": "0x44",
+     "kind": "ref"
+    },
+    {
+     "name": "clueSound",
+     "type": "AudioClip",
+     "offset": "0x48",
+     "kind": "ref"
+    },
+    {
+     "name": "objectToActivate",
+     "type": "GameObject",
+     "offset": "0x4C",
+     "kind": "ref"
+    },
+    {
+     "name": "activeDuration",
+     "type": "float",
+     "offset": "0x50",
+     "kind": "scalar"
+    },
+    {
+     "name": "panelOpen",
+     "type": "bool",
+     "offset": "0x54",
+     "kind": "scalar"
+    },
+    {
+     "name": "clueRunning",
+     "type": "bool",
+     "offset": "0x55",
+     "kind": "scalar"
+    },
+    {
+     "name": "clueRoutineCo",
+     "type": "Coroutine",
+     "offset": "0x58",
+     "kind": "ref"
+    },
+    {
+     "name": "filesPanel",
+     "type": "FilesPanelController",
+     "offset": "0x5C",
+     "kind": "ref"
+    },
+    {
+     "name": "mapPanel",
+     "type": "MapPanelController",
+     "offset": "0x60",
+     "kind": "ref"
+    },
+    {
+     "name": "lastPlayerPosition",
+     "type": "Vector3",
+     "offset": "0x64",
+     "kind": "scalar"
+    },
+    {
+     "name": "gameplayPaused",
+     "type": "bool",
+     "offset": "0x70",
+     "kind": "scalar"
+    },
+    {
+     "name": "cachedTimeScale",
+     "type": "float",
+     "offset": "0x74",
+     "kind": "scalar"
+    }
+   ],
+   "methods": [
+    {
+     "name": "get_IsPanelOpen",
+     "address": 3856,
+     "rva": "0xF10",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "get_IsClueActive",
+     "address": 3857,
+     "rva": "0xF11",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "Start",
+     "address": 3858,
+     "rva": "0xF12",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Update",
+     "address": 3859,
+     "rva": "0xF13",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "IsDeathScreenActive",
+     "address": 3860,
+     "rva": "0xF14",
+     "ret": "bool",
+     "params": ""
+    },
+    {
+     "name": "HandleInput",
+     "address": 3861,
+     "rva": "0xF15",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "OpenPanelFromButton",
+     "address": 3862,
+     "rva": "0xF16",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "TogglePanelFromButton",
+     "address": 3863,
+     "rva": "0xF17",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ClosePanelFromButton",
+     "address": 3864,
+     "rva": "0xF18",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "TogglePanel",
+     "address": 3865,
+     "rva": "0xF19",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "OpenPanel",
+     "address": 3866,
+     "rva": "0xF1A",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ReturnToGame",
+     "address": 3867,
+     "rva": "0xF1B",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ClosePanel",
+     "address": 3868,
+     "rva": "0xF1C",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "SetMobileControls",
+     "address": 3869,
+     "rva": "0xF1D",
+     "ret": "void",
+     "params": "bool visible"
+    },
+    {
+     "name": "PauseGameplay",
+     "address": 3870,
+     "rva": "0xF1E",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ResumeGameplay",
+     "address": 3871,
+     "rva": "0xF1F",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "HandleClose",
+     "address": 3872,
+     "rva": "0xF20",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "RequestClue",
+     "address": 3873,
+     "rva": "0xF21",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "StartClue",
+     "address": 3874,
+     "rva": "0xF22",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "GrantClue",
+     "address": 3875,
+     "rva": "0xF23",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ClueRoutine",
+     "address": 3876,
+     "rva": "0xF24",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "ApplyLanguage",
+     "address": 3877,
+     "rva": "0xF25",
+     "ret": "void",
+     "params": ""
+    }
+   ]
+  },
+  "MainMenuManager": {
+   "role": "root singleton, links managers",
+   "base": "MonoBehaviour",
+   "fields": [
+    {
+     "name": "menuCanvas",
+     "type": "GameObject",
+     "offset": "0x10",
+     "kind": "ref"
+    },
+    {
+     "name": "difficulties",
+     "type": "List<MainMenuManager.DifficultyUI>",
+     "offset": "0x14",
+     "kind": "ref"
+    },
+    {
+     "name": "difficultyHoverScale",
+     "type": "float",
+     "offset": "0x18",
+     "kind": "scalar"
+    },
+    {
+     "name": "difficultyScaleSpeed",
+     "type": "float",
+     "offset": "0x1C",
+     "kind": "scalar"
+    },
+    {
+     "name": "startButton",
+     "type": "Button",
+     "offset": "0x20",
+     "kind": "ref"
+    },
+    {
+     "name": "startHoverScale",
+     "type": "float",
+     "offset": "0x24",
+     "kind": "scalar"
+    },
+    {
+     "name": "startScaleSpeed",
+     "type": "float",
+     "offset": "0x28",
+     "kind": "scalar"
+    },
+    {
+     "name": "unlockedColor",
+     "type": "Color",
+     "offset": "0x2C",
+     "kind": "scalar"
+    },
+    {
+     "name": "lockedColor",
+     "type": "Color",
+     "offset": "0x3C",
+     "kind": "scalar"
+    },
+    {
+     "name": "hoverColor",
+     "type": "Color",
+     "offset": "0x4C",
+     "kind": "scalar"
+    },
+    {
+     "name": "selectedColor",
+     "type": "Color",
+     "offset": "0x5C",
+     "kind": "scalar"
+    },
+    {
+     "name": "modes",
+     "type": "List<MainMenuManager.ModeSettings>",
+     "offset": "0x6C",
+     "kind": "ref"
+    },
+    {
+     "name": "materialsToUpdate",
+     "type": "List<Material>",
+     "offset": "0x70",
+     "kind": "ref"
+    },
+    {
+     "name": "difficultyTextures",
+     "type": "List<DifficultyTextures>",
+     "offset": "0x74",
+     "kind": "ref"
+    },
+    {
+     "name": "memorySettingsPerDifficulty",
+     "type": "List<MainMenuManager.MemoryDifficultySettings>",
+     "offset": "0x78",
+     "kind": "ref"
+    },
+    {
+     "name": "deathManager",
+     "type": "DeathManager",
+     "offset": "0x7C",
+     "kind": "ref"
+    },
+    {
+     "name": "batterySystem",
+     "type": "BatterySystem",
+     "offset": "0x80",
+     "kind": "ref"
+    },
+    {
+     "name": "memoryProgression",
+     "type": "MemoryProgression",
+     "offset": "0x84",
+     "kind": "ref"
+    },
+    {
+     "name": "chronoTimer",
+     "type": "ChronoUpTimerTMP",
+     "offset": "0x88",
+     "kind": "ref"
+    },
+    {
+     "name": "firstLaunchDifficulty",
+     "type": "int",
+     "offset": "0x8C",
+     "kind": "scalar"
+    },
+    {
+     "name": "introObject",
+     "type": "GameObject",
+     "offset": "0x90",
+     "kind": "ref"
+    },
+    {
+     "name": "audioSource",
+     "type": "AudioSource",
+     "offset": "0x94",
+     "kind": "ref"
+    },
+    {
+     "name": "buttonClickSound",
+     "type": "AudioClip",
+     "offset": "0x98",
+     "kind": "ref"
+    },
+    {
+     "name": "startClickSound",
+     "type": "AudioClip",
+     "offset": "0x9C",
+     "kind": "ref"
+    },
+    {
+     "name": "errorClickSound",
+     "type": "AudioClip",
+     "offset": "0xA0",
+     "kind": "ref"
+    },
+    {
+     "name": "unlockedDifficulty",
+     "type": "int",
+     "offset": "0xA4",
+     "kind": "scalar"
+    },
+    {
+     "name": "selectedDifficulty",
+     "type": "int",
+     "offset": "0xA8",
+     "kind": "scalar"
+    },
+    {
+     "name": "filesPanel",
+     "type": "FilesPanelController",
+     "offset": "0xAC",
+     "kind": "ref"
+    },
+    {
+     "name": "startOriginalScale",
+     "type": "Vector3",
+     "offset": "0xB0",
+     "kind": "scalar"
+    },
+    {
+     "name": "startTargetScale",
+     "type": "Vector3",
+     "offset": "0xBC",
+     "kind": "scalar"
+    },
+    {
+     "name": "requestPointerLock",
+     "type": "bool",
+     "offset": "0xC8",
+     "kind": "scalar"
+    },
+    {
+     "name": "wasMenuVisible",
+     "type": "bool",
+     "offset": "0xC9",
+     "kind": "scalar"
+    }
+   ],
+   "methods": [
+    {
+     "name": "Awake",
+     "address": 4223,
+     "rva": "0x107F",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Start",
+     "address": 4224,
+     "rva": "0x1080",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "FirstLaunchAutoStart",
+     "address": 4225,
+     "rva": "0x1081",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "RefreshMenuState",
+     "address": 4226,
+     "rva": "0x1082",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "Update",
+     "address": 4227,
+     "rva": "0x1083",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "OnStartClicked",
+     "address": 4228,
+     "rva": "0x1084",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "HandleHover",
+     "address": 4229,
+     "rva": "0x1085",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "SelectDifficulty",
+     "address": 4230,
+     "rva": "0x1086",
+     "ret": "void",
+     "params": "int difficulty"
+    },
+    {
+     "name": "UpdateDifficultyVisuals",
+     "address": 4231,
+     "rva": "0x1087",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "TryUnlockNextDifficulty",
+     "address": 4232,
+     "rva": "0x1088",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ApplyDifficultyTextures",
+     "address": 4233,
+     "rva": "0x1089",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ApplyMemorySettings",
+     "address": 4234,
+     "rva": "0x108A",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "ApplyDifficultyObjectsNextFrame",
+     "address": 4235,
+     "rva": "0x108B",
+     "ret": "IEnumerator",
+     "params": ""
+    },
+    {
+     "name": "ApplyDifficultyObjects",
+     "address": 4236,
+     "rva": "0x108C",
+     "ret": "void",
+     "params": ""
+    },
+    {
+     "name": "StartGame",
+     "address": 4237,
+     "rva": "0x108D",
+     "ret": "void",
+     "params": "bool playIntro = True, bool preloadStartMemory = False"
+    },
+    {
+     "name": "PlayClickSound",
+     "address": 4238,
+     "rva": "0x108E",
+     "ret": "void",
+     "params": "AudioClip clip"
+    }
+   ]
+  }
+ },
+ "reference_graph": {
+  "FreeFPSControllerStable": [
+   {
+    "field": "menuManager",
+    "offset": "0x10",
+    "target": "MainMenuManager"
+   },
+   {
+    "field": "clueManager",
+    "offset": "0x14",
+    "target": "ClueManager"
+   },
+   {
+    "field": "filesPanel",
+    "offset": "0x18",
+    "target": "FilesPanelController"
+   },
+   {
+    "field": "mapPanel",
+    "offset": "0x1C",
+    "target": "MapPanelController"
+   },
+   {
+    "field": "joystick",
+    "offset": "0x20",
+    "target": "MobileJoystick"
+   },
+   {
+    "field": "mobileLook",
+    "offset": "0x24",
+    "target": "MobileLook"
+   }
+  ],
+  "MonsterController": [
+   {
+    "field": "deathManager",
+    "offset": "0x38",
+    "target": "DeathManager"
+   },
+   {
+    "field": "memoryProgression",
+    "offset": "0x3C",
+    "target": "MemoryProgression"
+   }
+  ],
+  "MonsterAI": [],
+  "MonsterNavController": [],
+  "StaticVisionMonster": [],
+  "MemoryProgression": [
+   {
+    "field": "outroObject",
+    "offset": "0x30",
+    "target": "OutroSequenceSimple"
+   },
+   {
+    "field": "introTitle",
+    "offset": "0x34",
+    "target": "BackroomsIntroTrigger"
+   },
+   {
+    "field": "menuManager",
+    "offset": "0x50",
+    "target": "MainMenuManager"
+   },
+   {
+    "field": "filesPanel",
+    "offset": "0x54",
+    "target": "FilesPanelController"
+   }
+  ],
+  "BatterySystem": [
+   {
+    "field": "deathManager",
+    "offset": "0x30",
+    "target": "DeathManager"
+   }
+  ],
+  "MiniMemoryPickup": [
+   {
+    "field": "memorySystem",
+    "offset": "0x10",
+    "target": "MemoryProgression"
+   }
+  ],
+  "PickupMemoryDistanceGlobal": [
+   {
+    "field": "memorySystem",
+    "offset": "0x10",
+    "target": "MemoryProgression"
+   }
+  ],
+  "DeathManager": [
+   {
+    "field": "batterySystem",
+    "offset": "0x4C",
+    "target": "BatterySystem"
+   }
+  ],
+  "ClueManager": [
+   {
+    "field": "deathManager",
+    "offset": "0x20",
+    "target": "DeathManager"
+   },
+   {
+    "field": "filesPanel",
+    "offset": "0x5C",
+    "target": "FilesPanelController"
+   },
+   {
+    "field": "mapPanel",
+    "offset": "0x60",
+    "target": "MapPanelController"
+   }
+  ],
+  "MainMenuManager": [
+   {
+    "field": "deathManager",
+    "offset": "0x7C",
+    "target": "DeathManager"
+   },
+   {
+    "field": "batterySystem",
+    "offset": "0x80",
+    "target": "BatterySystem"
+   },
+   {
+    "field": "memoryProgression",
+    "offset": "0x84",
+    "target": "MemoryProgression"
+   },
+   {
+    "field": "chronoTimer",
+    "offset": "0x88",
+    "target": "ChronoUpTimerTMP"
+   },
+   {
+    "field": "filesPanel",
+    "offset": "0xAC",
+    "target": "FilesPanelController"
+   }
+  ]
+ }
+}

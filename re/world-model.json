@@ -1,0 +1,3056 @@
+{
+ "scene": "Assets/Backroom map.unity",
+ "navmesh": {
+  "tiles": 33,
+  "agentRadius": 0.5,
+  "agentHeight": 2.0,
+  "agentSlope": 45.0,
+  "agentClimb": 0.75,
+  "center": [
+   -20.893,
+   -8.631,
+   20.657
+  ],
+  "extent": [
+   100.194,
+   42.435,
+   110.948
+  ]
+ },
+ "layers": {
+  "0": "Default",
+  "1": "TransparentFX",
+  "2": "Ignore Raycast",
+  "3": "Player",
+  "4": "Water",
+  "5": "UI",
+  "6": "interior",
+  "8": "Billboard",
+  "30": "postprocessing",
+  "31": "Monster"
+ },
+ "categories": {
+  "polaroids": [
+   {
+    "name": "polaroide wall (1)",
+    "layer": "Default",
+    "pos": [
+     -56.577,
+     1.455,
+     6.417
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Polaroid icone (1)",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Polaroids",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Polaroid icone",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "random polaroid",
+    "layer": "Default",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall",
+    "layer": "Default",
+    "pos": [
+     -54.6,
+     1.63,
+     -26.347
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Polaroid icone (2)",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall (10)",
+    "layer": "Default",
+    "pos": [
+     -44.416,
+     -0.312,
+     -35.41
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroid (1)",
+    "layer": "Default",
+    "pos": [
+     -59.89,
+     0.099,
+     -12.66
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroid",
+    "layer": "Default",
+    "pos": [
+     -59.89,
+     0.099,
+     -12.66
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour",
+     "BoxCollider",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroid",
+    "layer": "Default",
+    "pos": [
+     -106.806,
+     27.183,
+     -34.339
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall (7)",
+    "layer": "Default",
+    "pos": [
+     -65.791,
+     1.355,
+     -4.318
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall (5)",
+    "layer": "Default",
+    "pos": [
+     -65.791,
+     1.355,
+     -4.318
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall (6)",
+    "layer": "Default",
+    "pos": [
+     -65.791,
+     1.355,
+     -4.318
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall (3)",
+    "layer": "Default",
+    "pos": [
+     -65.791,
+     1.355,
+     -4.318
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall (4)",
+    "layer": "Default",
+    "pos": [
+     -65.791,
+     1.355,
+     -4.318
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall (9)",
+    "layer": "Default",
+    "pos": [
+     -65.791,
+     1.355,
+     -4.318
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall (8)",
+    "layer": "Default",
+    "pos": [
+     -65.791,
+     1.355,
+     -4.318
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall (2)",
+    "layer": "Default",
+    "pos": [
+     -65.119,
+     1.395,
+     -6.623
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "polaroide wall (1)",
+    "layer": "Default",
+    "pos": [
+     -58.828,
+     1.455,
+     6.413
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   }
+  ],
+  "memory_pickups": [
+   {
+    "name": "next memory",
+    "layer": "Default",
+    "pos": [
+     -68.922,
+     1.517,
+     -36.664
+    ],
+    "components": [
+     "Transform",
+     "ParticleSystem",
+     "ParticleSystemRenderer"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (31)",
+    "layer": "Default",
+    "pos": [
+     -9.605,
+     1.1,
+     44.216
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (27)",
+    "layer": "Default",
+    "pos": [
+     -44.467,
+     1.1,
+     -26.789
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (6)",
+    "layer": "Default",
+    "pos": [
+     -2.127,
+     1.1,
+     4.189
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (28)",
+    "layer": "Default",
+    "pos": [
+     13.604,
+     1.1,
+     31.285
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (11)",
+    "layer": "Default",
+    "pos": [
+     -24.955,
+     1.1,
+     -2.369
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (22)",
+    "layer": "Default",
+    "pos": [
+     6.454,
+     1.1,
+     80.517
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (21)",
+    "layer": "Default",
+    "pos": [
+     4.32,
+     1.1,
+     52.71
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (32)",
+    "layer": "Default",
+    "pos": [
+     -8.92,
+     1.1,
+     38.495
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (26)",
+    "layer": "Default",
+    "pos": [
+     -9.522,
+     1.1,
+     52.929
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (38)",
+    "layer": "Default",
+    "pos": [
+     -43.208,
+     1.1,
+     22.484
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (24)",
+    "layer": "Default",
+    "pos": [
+     -17.823,
+     1.1,
+     48.138
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (9)",
+    "layer": "Default",
+    "pos": [
+     2.961,
+     1.1,
+     -17.266
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "restored memory",
+    "layer": "Player",
+    "pos": [
+     -106.943,
+     27.188,
+     -34.336
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (5)",
+    "layer": "Default",
+    "pos": [
+     8.0,
+     1.1,
+     7.431
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (4)",
+    "layer": "Default",
+    "pos": [
+     0.403,
+     1.1,
+     38.421
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (12)",
+    "layer": "Default",
+    "pos": [
+     -36.355,
+     1.1,
+     -1.867
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (15)",
+    "layer": "Default",
+    "pos": [
+     -25.248,
+     1.1,
+     -23.666
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (34)",
+    "layer": "Default",
+    "pos": [
+     -3.492,
+     1.1,
+     30.446
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (13)",
+    "layer": "Default",
+    "pos": [
+     -30.552,
+     1.1,
+     17.353
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (30)",
+    "layer": "Default",
+    "pos": [
+     1.169,
+     1.1,
+     42.461
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (36)",
+    "layer": "Default",
+    "pos": [
+     -24.473,
+     1.1,
+     -1.906
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (20)",
+    "layer": "Default",
+    "pos": [
+     1.335,
+     1.1,
+     55.578
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (7)",
+    "layer": "Default",
+    "pos": [
+     10.017,
+     1.1,
+     -24.849
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (37)",
+    "layer": "Default",
+    "pos": [
+     -31.291,
+     1.1,
+     23.064
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (17)",
+    "layer": "Default",
+    "pos": [
+     34.118,
+     1.1,
+     -4.211
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (33)",
+    "layer": "Default",
+    "pos": [
+     -8.921,
+     1.1,
+     30.829
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (25)",
+    "layer": "Default",
+    "pos": [
+     -9.012,
+     1.1,
+     47.244
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (14)",
+    "layer": "Default",
+    "pos": [
+     -35.47,
+     1.1,
+     -8.485
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (16)",
+    "layer": "Default",
+    "pos": [
+     29.438,
+     1.1,
+     6.582
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (3)",
+    "layer": "Default",
+    "pos": [
+     -10.402,
+     1.1,
+     58.624
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (2)",
+    "layer": "Default",
+    "pos": [
+     -23.808,
+     1.1,
+     52.404
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (10)",
+    "layer": "Default",
+    "pos": [
+     6.58,
+     1.1,
+     2.728
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (23)",
+    "layer": "Default",
+    "pos": [
+     5.361,
+     1.1,
+     21.765
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (35)",
+    "layer": "Default",
+    "pos": [
+     -11.272,
+     1.1,
+     2.514
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (8)",
+    "layer": "Default",
+    "pos": [
+     17.884,
+     1.1,
+     -30.509
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns",
+    "layer": "Default",
+    "pos": [
+     -42.651,
+     1.1,
+     23.041
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (19)",
+    "layer": "Default",
+    "pos": [
+     21.579,
+     1.1,
+     39.438
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (29)",
+    "layer": "Default",
+    "pos": [
+     7.316,
+     1.1,
+     66.396
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (1)",
+    "layer": "Default",
+    "pos": [
+     -24.36,
+     1.1,
+     28.875
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Minispawns (18)",
+    "layer": "Default",
+    "pos": [
+     27.806,
+     1.1,
+     17.314
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Burned memory",
+    "layer": "Default",
+    "pos": [
+     -3.081,
+     0.03,
+     60.994
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop ",
+    "layer": "Default",
+    "pos": [
+     -63.71,
+     1.1,
+     -31.058
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (7)",
+    "layer": "Default",
+    "pos": [
+     -45.3,
+     1.1,
+     3.56
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (6)",
+    "layer": "Default",
+    "pos": [
+     -61.47,
+     1.1,
+     4.46
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (9)",
+    "layer": "Default",
+    "pos": [
+     -23.75,
+     1.1,
+     3.48
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (12)",
+    "layer": "Default",
+    "pos": [
+     27.96,
+     1.1,
+     7.982
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (10)",
+    "layer": "Default",
+    "pos": [
+     -23.75,
+     1.1,
+     21.27
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (5)",
+    "layer": "Default",
+    "pos": [
+     -63.63,
+     1.1,
+     -2.23
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (11)",
+    "layer": "Default",
+    "pos": [
+     -23.75,
+     1.1,
+     -14.7
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (1)",
+    "layer": "Default",
+    "pos": [
+     -70.57,
+     1.1,
+     -29.55
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "AudioSource",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (3)",
+    "layer": "Default",
+    "pos": [
+     -56.51,
+     1.1,
+     -23.99
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (8)",
+    "layer": "Default",
+    "pos": [
+     -35.83,
+     1.1,
+     4.2
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (13)",
+    "layer": "Default",
+    "pos": [
+     -73.728,
+     0.623,
+     -26.763
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Memory drop  (2)",
+    "layer": "Default",
+    "pos": [
+     -57.573,
+     1.1,
+     -31.69
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour",
+     "SphereCollider"
+    ],
+    "note": ""
+   }
+  ],
+  "managers_and_triggers": [
+   {
+    "name": "Joystick Handle",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Menu",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     -0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Indicator particule",
+    "layer": "Default",
+    "pos": [
+     -107.006,
+     25.728,
+     -34.335
+    ],
+    "components": [
+     "Transform",
+     "ParticleSystem",
+     "ParticleSystemRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "clue",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "menu button",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.001
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "CLUE ACTIVATION",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "target indicator",
+    "layer": "Default",
+    "pos": [
+     -107.006,
+     26.518,
+     -34.335
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Joystick background",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Menu background1 (1)",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     4.996
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Death Manager",
+    "layer": "Default",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Panel",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "clue manager",
+    "layer": "Default",
+    "pos": [
+     -109.45,
+     25.933,
+     -37.466
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "random sunds menu",
+    "layer": "Default",
+    "pos": [
+     -77584.109,
+     -4942.655,
+     188164.422
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Button clue",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     -1.902
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Joystick manager",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "ManagerManager",
+    "layer": "Default",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "intro (1)",
+    "layer": "Default",
+    "pos": [
+     -107.006,
+     27.183,
+     -34.335
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Joystick anchor",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Menu background1",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     5.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Lookzone",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "DEATH PANNEL",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   }
+  ],
+  "monster_spawns": [
+   {
+    "name": "Spawn smiller (2)",
+    "layer": "Default",
+    "pos": [
+     -23.97,
+     1.604,
+     3.616
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller (8)",
+    "layer": "Default",
+    "pos": [
+     -23.909,
+     1.351,
+     -22.059
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller (10)",
+    "layer": "Default",
+    "pos": [
+     28.269,
+     1.421,
+     20.124
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller (5)",
+    "layer": "Default",
+    "pos": [
+     35.644,
+     1.886,
+     -2.44
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller",
+    "layer": "Default",
+    "pos": [
+     -44.768,
+     2.382,
+     -22.047
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn rabbit normal",
+    "layer": "Default",
+    "pos": [
+     -56.812,
+     0.61,
+     -26.389
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "BoxCollider",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller (6)",
+    "layer": "Default",
+    "pos": [
+     7.924,
+     1.151,
+     80.432
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller",
+    "layer": "Default",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller (3)",
+    "layer": "Default",
+    "pos": [
+     -11.69,
+     1.643,
+     -8.292
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller (4)",
+    "layer": "Default",
+    "pos": [
+     -23.96,
+     1.86,
+     -22.15
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller (9)",
+    "layer": "Default",
+    "pos": [
+     -12.081,
+     1.191,
+     21.477
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller (1)",
+    "layer": "Default",
+    "pos": [
+     -43.913,
+     1.57,
+     22.9
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Spawn smiller (7)",
+    "layer": "Default",
+    "pos": [
+     -23.686,
+     1.308,
+     61.148
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   }
+  ],
+  "respawn_points": [
+   {
+    "name": "respawn (3)",
+    "layer": "Default",
+    "pos": [
+     -17.859,
+     1.251,
+     52.611
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "respawn",
+    "layer": "Default",
+    "pos": [
+     -56.821,
+     1.557,
+     3.106
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "respawn (1)",
+    "layer": "Default",
+    "pos": [
+     35.392,
+     0.718,
+     -14.36
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "respawn player points",
+    "layer": "Default",
+    "pos": [
+     1.5,
+     2.3,
+     -3.281
+    ],
+    "components": [
+     "Transform",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Cleaner respawn 1",
+    "layer": "Default",
+    "pos": [
+     4.864,
+     0.106,
+     -28.605
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "respawn (4)",
+    "layer": "Default",
+    "pos": [
+     -24.272,
+     0.721,
+     -50.281
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "respawn (6)",
+    "layer": "Default",
+    "pos": [
+     4.501,
+     1.668,
+     -56.47
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mini memory respawn",
+    "layer": "Default",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "respawn (2)",
+    "layer": "Default",
+    "pos": [
+     24.019,
+     0.557,
+     26.244
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "respawn (5)",
+    "layer": "Default",
+    "pos": [
+     -48.684,
+     1.578,
+     -62.552
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "respawn (7)",
+    "layer": "Default",
+    "pos": [
+     -50.327,
+     0.924,
+     35.49
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   }
+  ],
+  "path_nodes": [
+   {
+    "name": "Node child (3)",
+    "layer": "Default",
+    "pos": [
+     -92.666,
+     26.083,
+     -41.788
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Node child (1)",
+    "layer": "Default",
+    "pos": [
+     -99.366,
+     25.786,
+     -35.837
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Node child (2)",
+    "layer": "Default",
+    "pos": [
+     -96.294,
+     25.729,
+     -48.346
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Node child (1)",
+    "layer": "Default",
+    "pos": [
+     -101.923,
+     25.794,
+     -39.475
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Node child (3)",
+    "layer": "Default",
+    "pos": [
+     -89.28,
+     25.817,
+     -46.299
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Node child (2)",
+    "layer": "Default",
+    "pos": [
+     -101.676,
+     25.85,
+     -45.815
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Node child",
+    "layer": "Default",
+    "pos": [
+     -98.595,
+     25.852,
+     -34.037
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Node child",
+    "layer": "Default",
+    "pos": [
+     -90.965,
+     25.917,
+     -33.711
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   }
+  ],
+  "cameras": [
+   {
+    "name": "Camera",
+    "layer": "Default",
+    "pos": [
+     5.118,
+     3.127,
+     77.947
+    ],
+    "components": [
+     "Transform",
+     "Camera",
+     "AudioListener",
+     "Animator",
+     "AudioSource",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Main Camera",
+    "layer": "Player",
+    "pos": [
+     -107.006,
+     27.183,
+     -34.335
+    ],
+    "components": [
+     "Transform",
+     "Camera",
+     "AudioListener",
+     "AudioSource",
+     "MonoBehaviour",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Camera",
+    "layer": "Default",
+    "pos": [
+     -43.407,
+     0.166,
+     -16.502
+    ],
+    "components": [
+     "Transform",
+     "Camera",
+     "AudioListener",
+     "Animator",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Camera",
+    "layer": "Default",
+    "pos": [
+     5.118,
+     3.127,
+     77.947
+    ],
+    "components": [
+     "Transform",
+     "Camera",
+     "AudioListener",
+     "Animator",
+     "AudioSource",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Camera",
+    "layer": "Default",
+    "pos": [
+     -44.43,
+     0.166,
+     -12.913
+    ],
+    "components": [
+     "Transform",
+     "Camera",
+     "AudioListener",
+     "Animator",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Camera",
+    "layer": "Default",
+    "pos": [
+     10.315,
+     1.593,
+     79.073
+    ],
+    "components": [
+     "Transform",
+     "Camera",
+     "AudioListener",
+     "Animator",
+     "AudioSource",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   }
+  ],
+  "monster_rig_bones": [
+   {
+    "name": "The cleaner",
+    "layer": "Monster",
+    "pos": [
+     10.33,
+     -0.05,
+     78.56
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour",
+     "NavMeshAgent",
+     "CapsuleCollider",
+     "AudioSource",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightShoulder",
+    "layer": "Monster",
+    "pos": [
+     10.414,
+     1.549,
+     78.542
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightArm",
+    "layer": "Monster",
+    "pos": [
+     10.545,
+     1.454,
+     78.544
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Standard Walk",
+    "layer": "Monster",
+    "pos": [
+     10.33,
+     -0.05,
+     78.56
+    ],
+    "components": [
+     "Transform",
+     "Animator",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightHandThumb4",
+    "layer": "Monster",
+    "pos": [
+     10.573,
+     0.816,
+     78.753
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:Hips",
+    "layer": "Monster",
+    "pos": [
+     10.329,
+     0.992,
+     78.551
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftHandIndex3",
+    "layer": "Monster",
+    "pos": [
+     10.07,
+     0.764,
+     78.563
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftToeBase",
+    "layer": "Monster",
+    "pos": [
+     10.172,
+     -0.016,
+     78.636
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:Spine",
+    "layer": "Monster",
+    "pos": [
+     10.328,
+     1.108,
+     78.538
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightHandIndex1",
+    "layer": "Monster",
+    "pos": [
+     10.62,
+     0.852,
+     78.686
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightHand",
+    "layer": "Monster",
+    "pos": [
+     10.609,
+     0.917,
+     78.658
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftShoulder",
+    "layer": "Monster",
+    "pos": [
+     10.263,
+     1.553,
+     78.533
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:HeadTop_End",
+    "layer": "Monster",
+    "pos": [
+     10.337,
+     1.863,
+     78.716
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftLeg",
+    "layer": "Monster",
+    "pos": [
+     10.199,
+     0.523,
+     78.769
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftUpLeg",
+    "layer": "Monster",
+    "pos": [
+     10.227,
+     0.926,
+     78.547
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightHandIndex2",
+    "layer": "Monster",
+    "pos": [
+     10.607,
+     0.802,
+     78.7
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Mesh_0.002",
+    "layer": "Monster",
+    "pos": [
+     10.33,
+     -0.05,
+     78.56
+    ],
+    "components": [
+     "Transform",
+     "SkinnedMeshRenderer"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightHandIndex4",
+    "layer": "Monster",
+    "pos": [
+     10.533,
+     0.758,
+     78.691
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightToeBase",
+    "layer": "Monster",
+    "pos": [
+     10.451,
+     -0.05,
+     78.677
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftForeArm",
+    "layer": "Monster",
+    "pos": [
+     10.097,
+     1.29,
+     78.521
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftHandIndex4",
+    "layer": "Monster",
+    "pos": [
+     10.106,
+     0.741,
+     78.548
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:Neck",
+    "layer": "Monster",
+    "pos": [
+     10.339,
+     1.575,
+     78.539
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftHandThumb3",
+    "layer": "Monster",
+    "pos": [
+     10.074,
+     0.817,
+     78.61
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightHandThumb3",
+    "layer": "Monster",
+    "pos": [
+     10.573,
+     0.838,
+     78.734
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightHandIndex3",
+    "layer": "Monster",
+    "pos": [
+     10.573,
+     0.774,
+     78.699
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftHand",
+    "layer": "Monster",
+    "pos": [
+     10.039,
+     0.915,
+     78.561
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftHandIndex1",
+    "layer": "Monster",
+    "pos": [
+     10.026,
+     0.852,
+     78.574
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightLeg",
+    "layer": "Monster",
+    "pos": [
+     10.426,
+     0.471,
+     78.63
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftHandThumb4",
+    "layer": "Monster",
+    "pos": [
+     10.074,
+     0.795,
+     78.626
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightHandThumb1",
+    "layer": "Monster",
+    "pos": [
+     10.587,
+     0.896,
+     78.692
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:Spine2",
+    "layer": "Monster",
+    "pos": [
+     10.335,
+     1.4,
+     78.537
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightUpLeg",
+    "layer": "Monster",
+    "pos": [
+     10.432,
+     0.93,
+     78.576
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftFoot",
+    "layer": "Monster",
+    "pos": [
+     10.235,
+     0.157,
+     78.543
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftHandThumb2",
+    "layer": "Monster",
+    "pos": [
+     10.068,
+     0.855,
+     78.606
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:Head",
+    "layer": "Monster",
+    "pos": [
+     10.339,
+     1.605,
+     78.559
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftToe_End",
+    "layer": "Monster",
+    "pos": [
+     10.127,
+     -0.048,
+     78.703
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftHandThumb1",
+    "layer": "Monster",
+    "pos": [
+     10.061,
+     0.885,
+     78.587
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightToe_End",
+    "layer": "Monster",
+    "pos": [
+     10.495,
+     -0.044,
+     78.75
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightFoot",
+    "layer": "Monster",
+    "pos": [
+     10.376,
+     0.058,
+     78.521
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftHandIndex2",
+    "layer": "Monster",
+    "pos": [
+     10.04,
+     0.798,
+     78.574
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:LeftArm",
+    "layer": "Monster",
+    "pos": [
+     10.128,
+     1.463,
+     78.527
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightForeArm",
+    "layer": "Monster",
+    "pos": [
+     10.572,
+     1.28,
+     78.548
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:RightHandThumb2",
+    "layer": "Monster",
+    "pos": [
+     10.578,
+     0.875,
+     78.721
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "mixamorig:Spine1",
+    "layer": "Monster",
+    "pos": [
+     10.331,
+     1.244,
+     78.537
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   }
+  ],
+  "player_controller": [
+   {
+    "name": "character",
+    "layer": "Player",
+    "pos": [
+     -107.006,
+     27.183,
+     -34.335
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour",
+     "SphereCollider",
+     "CharacterController"
+    ],
+    "note": ""
+   }
+  ],
+  "doors": [
+   {
+    "name": "door sund",
+    "layer": "Default",
+    "pos": [
+     205.048,
+     -31.668,
+     22.264
+    ],
+    "components": [
+     "Transform",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Child door (1)",
+    "layer": "Default",
+    "pos": [
+     7.597,
+     0.577,
+     5.216
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer"
+    ],
+    "note": ""
+   },
+   {
+    "name": "door",
+    "layer": "Default",
+    "pos": [
+     -24.733,
+     0.682,
+     0.768
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Child door",
+    "layer": "Default",
+    "pos": [
+     7.53,
+     0.01,
+     5.22
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   }
+  ],
+  "batteries": [
+   {
+    "name": "battery sund",
+    "layer": "Default",
+    "pos": [
+     -41.119,
+     -0.084,
+     9.206
+    ],
+    "components": [
+     "Transform",
+     "AudioSource"
+    ],
+    "note": ""
+   },
+   {
+    "name": "Button Get Battery",
+    "layer": "UI",
+    "pos": [
+     0.0,
+     0.0,
+     -41.0
+    ],
+    "components": [
+     "RectTransform",
+     "CanvasRenderer",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "battery spawn points",
+    "layer": "Default",
+    "pos": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "components": [
+     "Transform"
+    ],
+    "note": ""
+   },
+   {
+    "name": "battery",
+    "layer": "Default",
+    "pos": [
+     -41.183,
+     1.068,
+     12.436
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "LODGroup",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "battery (1)",
+    "layer": "Default",
+    "pos": [
+     24.409,
+     1.124,
+     20.218
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "LODGroup",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "battery (4)",
+    "layer": "Default",
+    "pos": [
+     14.427,
+     0.328,
+     30.805
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "LODGroup",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "battery (3)",
+    "layer": "Default",
+    "pos": [
+     0.957,
+     0.911,
+     47.541
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "LODGroup",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   },
+   {
+    "name": "battery (2)",
+    "layer": "Default",
+    "pos": [
+     -5.278,
+     0.934,
+     5.924
+    ],
+    "components": [
+     "Transform",
+     "MeshFilter",
+     "MeshRenderer",
+     "LODGroup",
+     "MonoBehaviour"
+    ],
+    "note": ""
+   }
+  ],
+  "monster_agents": [
+   {
+    "name": "GameObject",
+    "layer": "Default",
+    "pos": [
+     -106.659,
+     0.621,
+     -50.461
+    ],
+    "components": [
+     "Transform",
+     "NavMeshAgent",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": "",
+    "agent": {
+     "gameobject": "GameObject",
+     "world_pos": [
+      -106.659,
+      0.621,
+      -50.461
+     ],
+     "speed": 3.5,
+     "acceleration": 8.0,
+     "radius": 0.10000000149011612,
+     "stoppingDistance": 0.0,
+     "height": 0.10000000149011612,
+     "baseOffset": 0.0,
+     "angularSpeed": 280.0,
+     "autoBraking": true
+    }
+   },
+   {
+    "name": "PimkyWolf (1)",
+    "layer": "Default",
+    "pos": [
+     -43.57,
+     -0.084,
+     -17.19
+    ],
+    "components": [
+     "Transform",
+     "Animator",
+     "MonoBehaviour",
+     "NavMeshAgent",
+     "AudioSource",
+     "MonoBehaviour"
+    ],
+    "note": "",
+    "agent": {
+     "gameobject": "PimkyWolf (1)",
+     "world_pos": [
+      -43.57,
+      -0.084,
+      -17.19
+     ],
+     "speed": 9.0,
+     "acceleration": 8.0,
+     "radius": 0.5,
+     "stoppingDistance": 0.0,
+     "height": 2.0,
+     "baseOffset": 0.0,
+     "angularSpeed": 120.0,
+     "autoBraking": true
+    }
+   },
+   {
+    "name": "PimkyWolf HARD",
+    "layer": "Default",
+    "pos": [
+     -44.593,
+     -0.084,
+     -13.601
+    ],
+    "components": [
+     "Transform",
+     "Animator",
+     "MonoBehaviour",
+     "NavMeshAgent",
+     "AudioSource",
+     "MonoBehaviour"
+    ],
+    "note": "",
+    "agent": {
+     "gameobject": "PimkyWolf HARD",
+     "world_pos": [
+      -44.593,
+      -0.084,
+      -13.601
+     ],
+     "speed": 9.0,
+     "acceleration": 8.0,
+     "radius": 0.5,
+     "stoppingDistance": 0.0,
+     "height": 2.0,
+     "baseOffset": 0.0,
+     "angularSpeed": 120.0,
+     "autoBraking": true
+    }
+   },
+   {
+    "name": "Drunk Walk",
+    "layer": "Default",
+    "pos": [
+     -11.0,
+     -0.009,
+     -1.98
+    ],
+    "components": [
+     "Transform",
+     "Animator",
+     "AudioSource",
+     "MonoBehaviour",
+     "NavMeshAgent",
+     "LODGroup",
+     "MonoBehaviour"
+    ],
+    "note": "",
+    "agent": {
+     "gameobject": "Drunk Walk",
+     "world_pos": [
+      -11.0,
+      -0.009,
+      -1.98
+     ],
+     "speed": 5.25,
+     "acceleration": 8.0,
+     "radius": 0.5,
+     "stoppingDistance": 0.0,
+     "height": 2.0,
+     "baseOffset": 0.0,
+     "angularSpeed": 120.0,
+     "autoBraking": true
+    }
+   },
+   {
+    "name": "Rabbit",
+    "layer": "Default",
+    "pos": [
+     -43.555,
+     0.227,
+     0.977
+    ],
+    "components": [
+     "Transform",
+     "Animator",
+     "MonoBehaviour",
+     "NavMeshAgent",
+     "MonoBehaviour"
+    ],
+    "note": "",
+    "agent": {
+     "gameobject": "Rabbit",
+     "world_pos": [
+      -43.555,
+      0.227,
+      0.977
+     ],
+     "speed": 3.5,
+     "acceleration": 8.0,
+     "radius": 0.5,
+     "stoppingDistance": 0.0,
+     "height": 2.0,
+     "baseOffset": 0.0,
+     "angularSpeed": 120.0,
+     "autoBraking": true
+    }
+   },
+   {
+    "name": "run monster normal",
+    "layer": "Default",
+    "pos": [
+     5.15,
+     -0.034,
+     71.85
+    ],
+    "components": [
+     "Transform",
+     "AudioSource",
+     "NavMeshAgent",
+     "MonoBehaviour",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": "",
+    "agent": {
+     "gameobject": "run monster normal",
+     "world_pos": [
+      5.15,
+      -0.034,
+      71.85
+     ],
+     "speed": 3.0,
+     "acceleration": 8.0,
+     "radius": 0.20000000298023224,
+     "stoppingDistance": 0.0,
+     "height": 2.0,
+     "baseOffset": 0.0,
+     "angularSpeed": 120.0,
+     "autoBraking": true
+    }
+   },
+   {
+    "name": "run monster Hard",
+    "layer": "Default",
+    "pos": [
+     5.15,
+     -0.034,
+     71.85
+    ],
+    "components": [
+     "Transform",
+     "AudioSource",
+     "NavMeshAgent",
+     "MonoBehaviour",
+     "MonoBehaviour"
+    ],
+    "note": "",
+    "agent": {
+     "gameobject": "run monster Hard",
+     "world_pos": [
+      5.15,
+      -0.034,
+      71.85
+     ],
+     "speed": 3.0,
+     "acceleration": 8.0,
+     "radius": 0.20000000298023224,
+     "stoppingDistance": 0.0,
+     "height": 2.0,
+     "baseOffset": 0.0,
+     "angularSpeed": 120.0,
+     "autoBraking": true
+    }
+   },
+   {
+    "name": "FourthGreen",
+    "layer": "Default",
+    "pos": [
+     -43.555,
+     0.227,
+     0.977
+    ],
+    "components": [
+     "Transform",
+     "MonoBehaviour",
+     "NavMeshAgent",
+     "MonoBehaviour"
+    ],
+    "note": "",
+    "agent": {
+     "gameobject": "FourthGreen",
+     "world_pos": [
+      -43.555,
+      0.227,
+      0.977
+     ],
+     "speed": 3.5,
+     "acceleration": 8.0,
+     "radius": 0.10000000149011612,
+     "stoppingDistance": 0.0,
+     "height": 0.10000000149011612,
+     "baseOffset": 0.0,
+     "angularSpeed": 280.0,
+     "autoBraking": true
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,146 @@
+[
+ {
+  "gameobject": "The cleaner",
+  "world_pos": [
+   10.33,
+   -0.05,
+   78.56
+  ],
+  "speed": 1.0,
+  "acceleration": 3.0,
+  "radius": 0.20000000298023224,
+  "stoppingDistance": 0.0,
+  "height": 2.0,
+  "baseOffset": -0.10000000149011612,
+  "angularSpeed": 120.0,
+  "autoBraking": true
+ },
+ {
+  "gameobject": "GameObject",
+  "world_pos": [
+   -106.659,
+   0.621,
+   -50.461
+  ],
+  "speed": 3.5,
+  "acceleration": 8.0,
+  "radius": 0.10000000149011612,
+  "stoppingDistance": 0.0,
+  "height": 0.10000000149011612,
+  "baseOffset": 0.0,
+  "angularSpeed": 280.0,
+  "autoBraking": true
+ },
+ {
+  "gameobject": "PimkyWolf (1)",
+  "world_pos": [
+   -43.57,
+   -0.084,
+   -17.19
+  ],
+  "speed": 9.0,
+  "acceleration": 8.0,
+  "radius": 0.5,
+  "stoppingDistance": 0.0,
+  "height": 2.0,
+  "baseOffset": 0.0,
+  "angularSpeed": 120.0,
+  "autoBraking": true
+ },
+ {
+  "gameobject": "PimkyWolf HARD",
+  "world_pos": [
+   -44.593,
+   -0.084,
+   -13.601
+  ],
+  "speed": 9.0,
+  "acceleration": 8.0,
+  "radius": 0.5,
+  "stoppingDistance": 0.0,
+  "height": 2.0,
+  "baseOffset": 0.0,
+  "angularSpeed": 120.0,
+  "autoBraking": true
+ },
+ {
+  "gameobject": "Drunk Walk",
+  "world_pos": [
+   -11.0,
+   -0.009,
+   -1.98
+  ],
+  "speed": 5.25,
+  "acceleration": 8.0,
+  "radius": 0.5,
+  "stoppingDistance": 0.0,
+  "height": 2.0,
+  "baseOffset": 0.0,
+  "angularSpeed": 120.0,
+  "autoBraking": true
+ },
+ {
+  "gameobject": "Rabbit",
+  "world_pos": [
+   -43.555,
+   0.227,
+   0.977
+  ],
+  "speed": 3.5,
+  "acceleration": 8.0,
+  "radius": 0.5,
+  "stoppingDistance": 0.0,
+  "height": 2.0,
+  "baseOffset": 0.0,
+  "angularSpeed": 120.0,
+  "autoBraking": true
+ },
+ {
+  "gameobject": "run monster normal",
+  "world_pos": [
+   5.15,
+   -0.034,
+   71.85
+  ],
+  "speed": 3.0,
+  "acceleration": 8.0,
+  "radius": 0.20000000298023224,
+  "stoppingDistance": 0.0,
+  "height": 2.0,
+  "baseOffset": 0.0,
+  "angularSpeed": 120.0,
+  "autoBraking": true
+ },
+ {
+  "gameobject": "run monster Hard",
+  "world_pos": [
+   5.15,
+   -0.034,
+   71.85
+  ],
+  "speed": 3.0,
+  "acceleration": 8.0,
+  "radius": 0.20000000298023224,
+  "stoppingDistance": 0.0,
+  "height": 2.0,
+  "baseOffset": 0.0,
+  "angularSpeed": 120.0,
+  "autoBraking": true
+ },
+ {
+  "gameobject": "FourthGreen",
+  "world_pos": [
+   -43.555,
+   0.227,
+   0.977
+  ],
+  "speed": 3.5,
+  "acceleration": 8.0,
+  "radius": 0.10000000149011612,
+  "stoppingDistance": 0.0,
+  "height": 0.10000000149011612,
+  "baseOffset": 0.0,
+  "angularSpeed": 280.0,
+  "autoBraking": true
+ }
+]
