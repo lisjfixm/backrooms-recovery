@@ -12,6 +12,7 @@
 | `world-model.json` | 靜態世界模型分類：怪物／生成點／記憶體／電池／門／重生點／攝影機等座標與 NavMesh 參數 |
 | `world.json` | 全部 GameObject／Transform／元件明細（含世界座標） |
 | `method-body-analysis.md` | 方法本體靜態分析：位址映射、薄包裝／間接呼叫形態、輸入系統判定與還原邊界 |
+| `BackroomsRecovery-路4-真機驗證紀錄.md` | Windows 真 GPU 實跑：輸入通道、轉向手感基線、60 秒長取樣與已知缺口 |
 | `agents.json` | 9 筆 NavMeshAgent 參數（速度、加速度、半徑、角速） |
 | `dump.cs` | 5,201 型別完整傾印：欄位偏移、方法 RVA（wasm 函式索引） |
 | `script.json` | 方法名→wasm 函式索引＋簽名（33,681 方法、38,433 位址） |

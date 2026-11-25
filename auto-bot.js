@@ -564,8 +564,10 @@
 
   // ---------- 主迴圈 ----------
 
-  function tick(now) {
-    requestAnimationFrame(tick);
+  // 主迴圈用 setInterval 而非 RAF：分頁被遮蔽/隱藏時 Chrome 會暫停 RAF，
+  // 但 interval 仍可運作；一般可見場景兩者等價。
+  function tick() {
+    var now = performance.now();
     if (!enabled || !canvas) return;
     pollLive(now);
     var ok = grabFrame(now);
@@ -650,7 +652,7 @@
     try { gl = canvas.getContext("webgl2") || canvas.getContext("webgl"); } catch (e) { gl = null; }
     buildUI();
     loadWorldModel();
-    requestAnimationFrame(tick);
+    setInterval(tick, 16);
   }
 
   window.BackroomsAutoBot = {
