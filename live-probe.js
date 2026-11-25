@@ -171,7 +171,11 @@
       };
     }
     if (T["get_position"] && cache.cam) {
-      out.camera = { pos: invokeVec(H, T["get_position"], cache.cam) };
+      out.camera = {
+        pos: invokeVec(H, T["get_position"], cache.cam),
+        forward: T["get_forward"] ? invokeVec(H, T["get_forward"], cache.cam) : null,
+        euler: T["get_eulerAngles"] ? invokeVec(H, T["get_eulerAngles"], cache.cam) : null
+      };
     }
     if (cache.monTr && validRef(H, cache.monTr, "Transform") && T["get_position"]) {
       out.monster = { pos: invokeVec(H, T["get_position"], cache.monTr) };

@@ -37,11 +37,16 @@
   var prevHash = "";
   var stuckFrames = 0;
   var turnDir = 1;
-  var button = null, debugEl = null;
+  var button = null, overlayButton = null, debugEl = null;
   var sense = {
     mode: mode, frameOK: false, frameBlank: false,
     centerLum: 0, leftLum: 0, rightLum: 0, pink: 0
   };
+
+  // ---------- 畫面 overlay：3D 世界點投影到螢幕標記 ----------
+
+  var OVERLAY_FOV_DEG = 60;   // 主鏡頭垂直 FOV（無處可讀時的預設值）
+  var overlay = { canvas: null, ctx: null, visible: true };
 
   // ---------- 路線 3 即時狀態（window.BRLive，唯讀） ----------
 
@@ -585,17 +590,20 @@
   // 但 interval 仍可運作；一般可見場景兩者等價。
   function tick() {
     var now = performance.now();
-    if (!enabled || !canvas) return;
+    if (!canvas) return;
     pollLive(now);
-    var ok = grabFrame(now);
-    sense.frameOK = ok;
-    if (live.ok && live.player && live.player.pos) {
-      liveDecide(now);
-    } else {
-      decide(now, ok);
+    if (enabled) {
+      var ok = grabFrame(now);
+      sense.frameOK = ok;
+      if (live.ok && live.player && live.player.pos) {
+        liveDecide(now);
+      } else {
+        decide(now, ok);
+      }
+      sense.mode = mode;
+      updateDebug();
     }
-    sense.mode = mode;
-    updateDebug();
+    drawOverlay();
   }
 
   // ---------- 開關與 UI ----------
@@ -607,6 +615,11 @@
     if (button) button.textContent = enabled ? "AUTO: ON" : "AUTO: OFF";
     updateDebug();
     if (window.console) console.log("[AutoBot]", enabled ? "enabled" : "disabled", sense);
+  }
+
+  function setOverlayVisible(v) {
+    overlay.visible = !!v;
+    if (overlayButton) overlayButton.textContent = overlay.visible ? "OVERLAY: ON" : "OVERLAY: OFF";
   }
 
   function liveSummary() {
@@ -633,6 +646,86 @@
     debugEl.style.whiteSpace = "pre";
   }
 
+  // 世界座標 → 螢幕 2D（方位／仰角投影，不依賴引擎 view/projection 矩陣）
+  function projectPoint(wx, wy, wz) {
+    var cam = live.camera;
+    if (!cam || !cam.pos) return null;
+    var yaw = (cam.euler ? cam.euler.y : 0) * Math.PI / 180;
+    var pitch = (cam.euler ? cam.euler.x : 0) * Math.PI / 180;
+    var fx = Math.sin(yaw) * Math.cos(pitch);
+    var fy = Math.sin(pitch);
+    var fz = Math.cos(yaw) * Math.cos(pitch);
+    var rx = Math.cos(yaw), rz = -Math.sin(yaw);
+    var ux = -Math.sin(pitch) * Math.sin(yaw);
+    var uy = Math.cos(pitch);
+    var uz = -Math.sin(pitch) * Math.cos(yaw);
+    var dx = wx - cam.pos.x, dy = wy - cam.pos.y, dz = wz - cam.pos.z;
+    var depth = dx * fx + dy * fy + dz * fz;
+    if (depth < 0.5) return { behind: true, depth: depth };
+    var right = dx * rx + dz * rz;
+    var up = dx * ux + dy * uy + dz * uz;
+    var W = overlay.canvas.width, H = overlay.canvas.height;
+    var tanY = Math.tan(OVERLAY_FOV_DEG * Math.PI / 360);
+    var tanX = tanY * (W / H);
+    return {
+      x: W / 2 + (right / depth) / tanX * (W / 2),
+      y: H / 2 - (up / depth) / tanY * (H / 2),
+      depth: depth, behind: false
+    };
+  }
+
+  function drawMarker(x, y, color, label) {
+    var ctx = overlay.ctx;
+    ctx.strokeStyle = color;
+    ctx.fillStyle = color;
+    ctx.lineWidth = 2;
+    ctx.beginPath(); ctx.arc(x, y, 8, 0, Math.PI * 2); ctx.stroke();
+    ctx.beginPath(); ctx.arc(x, y, 2.5, 0, Math.PI * 2); ctx.fill();
+    if (label) { ctx.font = "11px monospace"; ctx.fillText(label, x + 12, y + 4); }
+  }
+
+  function drawClamped(pr, color, label) {
+    var W = overlay.canvas.width, H = overlay.canvas.height, m = 24;
+    var off = pr.x < m || pr.x > W - m || pr.y < m || pr.y > H - m;
+    var x = Math.max(m, Math.min(W - m, pr.x));
+    var y = Math.max(m, Math.min(H - m, pr.y));
+    overlay.ctx.globalAlpha = off ? 0.55 : 1;
+    drawMarker(x, y, color, off ? label + " ↺" : label);
+    overlay.ctx.globalAlpha = 1;
+  }
+
+  function drawOverlay() {
+    var ctx = overlay.ctx;
+    if (!ctx) return;
+    ctx.clearRect(0, 0, overlay.canvas.width, overlay.canvas.height);
+    if (!overlay.visible) return;
+    if (live.goal && live.goal.pos) {
+      var g = projectPoint(live.goal.pos[0], live.goal.pos[1], live.goal.pos[2]);
+      if (g && !g.behind) drawClamped(g, "#37e6ff", live.goal.name || "GOAL");
+    }
+    if (live.monster && live.monster.pos) {
+      var m = projectPoint(live.monster.pos.x, live.monster.pos.y, live.monster.pos.z);
+      if (m && !m.behind) drawClamped(m, "#ff4d5e", "MOB");
+    }
+  }
+
+  function buildOverlay() {
+    overlay.canvas = document.createElement("canvas");
+    overlay.canvas.id = "br-overlay";
+    overlay.canvas.style.cssText =
+      "position:fixed;inset:0;z-index:99998;pointer-events:none;";
+    overlay.ctx = overlay.canvas.getContext("2d");
+    document.body.appendChild(overlay.canvas);
+    resizeOverlay();
+    window.addEventListener("resize", resizeOverlay);
+  }
+
+  function resizeOverlay() {
+    if (!overlay.canvas) return;
+    overlay.canvas.width = window.innerWidth;
+    overlay.canvas.height = window.innerHeight;
+  }
+
   function buildUI() {
     button = document.createElement("button");
     button.textContent = enabled ? "AUTO: ON" : "AUTO: OFF";
@@ -642,6 +735,15 @@
       "border:1px solid #666;border-radius:6px;cursor:pointer;";
     button.addEventListener("click", function () { setEnabled(!enabled); });
     document.body.appendChild(button);
+
+    overlayButton = document.createElement("button");
+    overlayButton.textContent = overlay.visible ? "OVERLAY: ON" : "OVERLAY: OFF";
+    overlayButton.style.cssText =
+      "position:fixed;top:10px;right:120px;z-index:99999;padding:6px 12px;" +
+      "font:12px/1.4 Torus,Arial,sans-serif;color:#fff;background:rgba(20,20,20,.7);" +
+      "border:1px solid #666;border-radius:6px;cursor:pointer;";
+    overlayButton.addEventListener("click", function () { setOverlayVisible(!overlay.visible); });
+    document.body.appendChild(overlayButton);
 
     debugEl = document.createElement("div");
     debugEl.style.cssText =
@@ -653,6 +755,7 @@
     window.addEventListener("keydown", function (e) {
       if (injected) return;
       if (e.code === "KeyB") { setEnabled(!enabled); return; }
+      if (e.code === "KeyO") { setOverlayVisible(!overlay.visible); return; }
       if (enabled) setEnabled(false); // 玩家實際操作：收回控制權
     }, true);
     ["pointerdown", "touchstart"].forEach(function (type) {
@@ -668,6 +771,7 @@
     if (!canvas) { requestAnimationFrame(init); return; }
     try { gl = canvas.getContext("webgl2") || canvas.getContext("webgl"); } catch (e) { gl = null; }
     buildUI();
+    buildOverlay();
     loadWorldModel();
     setInterval(tick, 16);
   }

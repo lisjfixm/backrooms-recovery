@@ -14,6 +14,7 @@
 | `method-body-analysis.md` | 方法本體靜態分析：位址映射、薄包裝／間接呼叫形態、輸入系統判定與還原邊界 |
 | `BackroomsRecovery-路4-真機驗證紀錄.md` | Windows 真 GPU 實跑：輸入通道、轉向手感基線、60 秒長取樣與已知缺口 |
 | `BackroomsRecovery-路5-NavMesh可行性與脫困改進.md` | NavMesh 角點不可讀的探測結論、離線圖連通性分析、軌跡倒退＋斜向側繞脫困 |
+| `BackroomsRecovery-路6-畫面Overlay投影.md` | 目標/怪物 3D 座標投影螢幕標記：方位仰角重建、邊緣夾持、開關按鈕與快捷鍵 |
 | `agents.json` | 9 筆 NavMeshAgent 參數（速度、加速度、半徑、角速） |
 | `dump.cs` | 5,201 型別完整傾印：欄位偏移、方法 RVA（wasm 函式索引） |
 | `script.json` | 方法名→wasm 函式索引＋簽名（33,681 方法、38,433 位址） |
