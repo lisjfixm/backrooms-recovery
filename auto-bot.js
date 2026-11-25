@@ -68,7 +68,9 @@
     stallMs: 3800,        // 目標距離無進展判定卡住
     stallMsSlow: 6500,    // 慢速前進時放寬
     fleeDist: 9.0,        // 怪物靠近至此即逃離
-    searchMax: 220        // 目標搜尋上限距離
+    searchMax: 220,       // 目標搜尋上限距離
+    trailMs: 1200,        // 軌跡保留視窗（毫秒）
+    backtrackMs: 800      // 連續脫困失敗後倒退時長（毫秒）
   };
 
   // ---------- 靜態世界模型（唯讀參考，不參與即時致動） ----------
@@ -467,7 +469,8 @@
   }
 
   // 進度看門狗：距離長時間沒有下降 → 貼牆/卡門，改用「斜向滑牆」脫困
-  var guard = { best: 1e9, bestAt: 0, escapeUntil: 0, escapeDir: 1, fails: 0, lastEscapeAt: 0, goalKey: "" };
+  var guard = { best: 1e9, bestAt: 0, escapeUntil: 0, escapeDir: 1, fails: 0, lastEscapeAt: 0, goalKey: "", backtrackUntil: 0 };
+  var trail = [];   // 近期軌跡 {x,y,z,t}，供卡住時倒退回到開闊點
 
   function navProgress(now, dist, goal) {
     var key = goal ? (goal.category + ":" + goal.name) : "";
@@ -479,6 +482,7 @@
     if (now - guard.bestAt > lim) {
       guard.fails++;
       guard.escapeUntil = now + NAV.escapeMs;
+      if (guard.fails >= 2) guard.backtrackUntil = now + NAV.backtrackMs;
       // 連續失敗：換個側向；兩次以上就放棄這個目標
       if (now - guard.lastEscapeAt < NAV.escapeMs * 2) guard.escapeDir = -guard.escapeDir;
       guard.lastEscapeAt = now;
@@ -497,6 +501,8 @@
   // 以座標/姿態導航（路線 3 生效時；視覺規則作後備）
   function liveDecide(now) {
     var p = [live.player.pos.x, live.player.pos.y, live.player.pos.z];
+    trail.push({ x: p[0], y: p[1], z: p[2], t: now });
+    while (trail.length && now - trail[0].t > NAV.trailMs) trail.shift();
 
     // 怪物逼近 → 背向牠跑
     if (live.monsterDist < NAV.fleeDist && live.monster && live.monster.pos) {
@@ -504,7 +510,7 @@
       var away = yawTo(p, [live.monster.pos.x, live.monster.pos.y, live.monster.pos.z]) + 180;
       steerTo(away, now);
       hold("KeyW");
-      release("KeyS");
+      release("KeyS"); release("KeyA"); release("KeyD");
       return;
     }
 
@@ -526,7 +532,7 @@
 
     if (!goal) {
       mode = "roam";
-      release("KeyS");
+      release("KeyS"); release("KeyA"); release("KeyD");
       hold("KeyW");
       if (now - lastTurnAt > T.turnMs) {
         lastTurnAt = now;
@@ -543,6 +549,15 @@
       return;
     }
 
+    // 連續脫困失敗：先倒退回到最近的開闊點，再換邊重試
+    if (guard.backtrackUntil > now) {
+      mode = "backtrack";
+      release("KeyW"); release("KeyA"); release("KeyD");
+      hold("KeyS");
+      if (trail.length > 1) steerTo(yawTo(p, [trail[0].x, trail[0].y, trail[0].z]), now);
+      return;
+    }
+
     // 卡住脫困：朝目標方位偏移一個角度斜著走，像沿牆滑行
     if (guard.escapeUntil > now) {
       mode = "unstuck";
@@ -550,6 +565,8 @@
       var escAim = yawTo(p, goal.pos) + guard.escapeDir * NAV.escapeDeg;
       if (steerTo(escAim, now)) hold("KeyW");
       else if (Math.abs(live.yawErr) > NAV.walkAlignDeg) release("KeyW");
+      // 貼柱／貼牆時斜向側移繞行，不要只在原地轉向
+      if (guard.escapeDir > 0) hold("KeyD"); else hold("KeyA");
       return;
     }
 
@@ -557,7 +574,7 @@
     mode = stuck ? "unstuck" : "nav";
     var aim = yawTo(p, goal.pos);
     var align = steerTo(aim, now);
-    release("KeyS");
+    release("KeyS"); release("KeyA"); release("KeyD");
     if (alignedEnough()) hold("KeyW");
     else release("KeyW");   // 誤差太大先原地轉向
   }
